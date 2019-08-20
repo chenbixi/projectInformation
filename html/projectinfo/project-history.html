@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>建工网</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/cubeportfolio.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/tf.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/project_infor.css"/>
+    <link rel="stylesheet" href="../../css/pagination.css"/>
+    <script src="../../js/ip.js"></script>
+</head>
+
+<body>
+<!-- 顶部 -->
+<nav class="navbar navbar-inverse site-navbar">
+    <!-- 顶部第一栏 -->
+    <div class="yem-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-4">
+                    欢迎来到建工网
+                    <button class="log">登陆</button>
+                    <button class="log">注册</button>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    服务热线：123456789
+                </div>
+                <div class="col-md-5 col-xs-5 telephone">
+                    <a href="javascript:myCollection()">我的收藏</a>&nbsp;&nbsp;
+                    <a href="">客户服务</a>&nbsp;&nbsp;
+                    <a href="">网站导航</a>&nbsp;&nbsp;
+                    <a href="">发布信息</a>&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- logo图第二栏 -->
+    <div class="top-logo">
+        <div class="container">
+            <div class="row">
+                <div class="pull-left col-md-2 col-xs-2">
+                    <div style="height:80px">
+                        <img
+                                src="../../images/logo/logo2.png"
+                                class="logo-index"
+                                width="150px"
+                                height="60px"
+                                style="margin-top: 10px"
+                        />
+                    </div>
+                </div>
+                <div class="search col-md-6 col-xs-6">
+                    <div class="search_cont col-md-5">
+                        <select name="information" id="infor">
+                            <option value="">信息类别</option>
+                            <!--  <option value="">信息类别</option>-->
+                        </select>
+                        <select name="location" id="region">
+                            <option value="">地区</option>
+
+                            <!-- <option value="">地区</option>-->
+                        </select>
+                    </div>
+                    <div class="searcharea col-md-7">
+                        <div class="">
+                            <div class=" bar6 col-md-12">
+                                <form>
+                                    <input type="text" style="height: 40px;" placeholder="请输入您要搜索的内容..."/>
+                                    <button type="button" style="height: 40px;"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-right col-md-3 col-xs-3" style="margin-top:20px">
+                    <p>咨询热线：138-6130-3238</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="about-nav-py">
+        <div class="container">
+            <div class="navbar-header">
+                <img src="images/logo.png" class="meblie-logo"/>
+                <button
+                        type="button"
+                        class="navbar-toggle collapsed jicheng"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar"
+                >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav nav-top-quanju">
+                    <li>
+                        <a href="../../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="../../project_inforomation.html" class="active-daohang">工程信息</a>
+                    </li>
+                    <li class="">
+                        <a
+                                href="../../../jgw/bidding_information.html"
+
+                        >招标信息</span
+                                ></a>
+
+                    </li>
+                    <li>
+                        <a href="../../../jgw/win_bidding.html">中标信息</a>
+                    </li>
+                    <li>
+                        <a href="../../../jgw/purchase.html">采购信息</a>
+                    </li>
+                    <li>
+                        <a href="../../../jgw/database.html">数据库</a>
+                    </li>
+                    <li>
+                        <a href="../../../jgw/land_market.html">土地交易</a>
+                    </li>
+                    <li>
+                        <a href="../../../jgw/meeting.html">会议信息</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</nav>
+<!-- 顶部结束 -->
+<!-- 当前位置 -->
+<div style="width: 77.5%;margin:5px auto">
+    当前位置：<a href="../../../jgw/index.html">首页</a> &nbsp;/&nbsp;
+    <a href="../../../jgw/project_inforomation.html">工程信息</a> &nbsp;/&nbsp;
+    <a href="../../../jgw/html/projectinfo/project-history.html">工程信息浏览历史</a>
+</div>
+<!-- 当前位置结束 -->
+<!-- 中间内容 -->
+<div class="pro_infor_cont">
+    <div
+            class="row"
+            style="width: 77.5%;margin:5px auto;display:flex;justify-content: space-between"
+    >
+        <!-- 左侧内容 -->
+        <div
+                class="col-md-2"
+                style="border: 1px solid grey;padding: 0;margin-right: 10px;"
+        >
+            <!-- 用户登陆 -->
+            <div class="land_plan col-md-12 col-xs-12" style="padding: 0">
+                <div>
+                    <div class="" style="background: #0066cc">
+                        <div
+                                class="word2"
+                                style="text-align: center;color:white;padding: 5px 0;font-size: 16px;"
+
+                        >
+                            用户登陆
+                        </div>
+                    </div>
+                    <div class="use_log">
+                        <div class="input-group">
+                  <span
+                          class="input-group-addon glyphicon glyphicon-user"
+
+                  ></span>
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="用户名"
+                                    aria-describedby="basic-addon1"
+                            />
+                        </div>
+                        <div class="input-group">
+                  <span
+                          class="input-group-addon glyphicon glyphicon-lock"
+
+                  ></span>
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="登陆密码"
+                                    aria-describedby="basic-addon1"
+                            />
+                        </div>
+                    </div>
+                    <div class="use_check" style="display:flex">
+                        <input type="checkbox" name="gender"/>
+                        <label>记住用户名 </label>
+                    </div>
+                    <div class="use_check" style="display:flex">
+                        <input type="checkbox" name="gender"/>
+                        <label>记住密码 </label>
+                    </div>
+                    <div class="use_check" style="display:flex">
+                        <input type="checkbox" name="gender"/>
+                        <label>自动登陆</label>
+                    </div>
+                    <div class="anniu">
+                        <button class="log" style="background: #0066cc">登陆</button>
+                        <a href="">忘记密码?</a>
+                    </div>
+                    <div class="anniu" style="display: flex;">
+                        <p>还没会员账号?</p>
+                        <a href="" style="margin-left: 5px;color:#0066cc">免费注册</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 用户登陆结束 -->
+
+            <!-- 我的收藏 -->
+            <a href="">
+                <div class="pro_stage col-md-12" style="padding: 0  ;cursor: pointer;">
+                    <div class="title">
+                        浏览历史
+                    </div>
+                </div>
+            </a>
+            <!-- 我的收藏结束 -->
+
+
+            <!-- 热门信息列表结束 -->
+        </div>
+        <!-- 左侧内容结束 -->
+
+        <!-- 右侧部分 -->
+        <div
+                class="col-md-10"
+                style="border: 1px solid grey;padding: 0;margin-left: 10px;"
+        >
+            <!-- 右侧顶部 -->
+            <div
+                    class="right_top row"
+                    style="margin:0;border: 1px solid grey;padding: 10px 0"
+            >
+                <div class="col-md-7">
+                    <div class="right_region col-md-3">
+                        <select name="" id="project_history_list">
+                            <option value="">地区工程查询</option>
+
+                        </select>
+                    </div>
+
+                </div>
+                <div class="searcharea col-md-4">
+                    <div class="select">
+                        <div class="search bar6 col-md-12">
+                            <form>
+                                <input type="text" placeholder="请输入关键字..." id="search_history_title"/>
+                                <button type="button" onclick="search_project_history()"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右侧顶部结束 -->
+            <!-- 右侧中部 -->
+            <div class="row" style="margin: 5px 0;border:1px solid grey">
+                <div class="col-md-9" style="padding: 0">
+                    <ul class="nav nav-pills">
+                        <li class=""><a href="">全部</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3" style="margin-top: 10px;">
+
+                </div>
+            </div>
+            <div class="row" style="margin: 5px 0;border:1px solid grey">
+                <div class="col-md-4 pull-left you_btn" style="padding: 0;margin: 5px 0;display:flex;">
+                    <button>下载项目</button>
+                </div>
+
+            </div>
+            <!-- 分页页码数 -->
+            <div class="row" style="padding: 0;margin:0">
+                <div class="ht-page"></div>
+            </div>
+            <!-- 右侧中部结束 -->
+            <!-- 右侧信息列表 -->
+            <div>
+                <table class="table table-bordered table-hover" id="history-list">
+
+                </table>
+            </div>
+            <!-- 右侧信息列表结束 -->
+        </div>
+        <!-- 右侧部分结束 -->
+    </div>
+    <!-- 服务 -->
+    <div
+            class="serve_link row"
+            style="width: 77.5%;margin:5px auto;display:flex;justify-content: space-between;border: 1px solid grey;"
+    >
+        <div class="col-md-2" style="padding: 0;">
+            <div style="text-align: center;" class="sev">
+                客户服务
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">免费注册</a></div>
+                <div class=""><a href="">会员服务</a></div>
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">在线客服</a></div>
+                <div class=""><a href="">意见建议</a></div>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+            <div style="text-align: center;" class="sev">
+                招标服务
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">招标公告</a></div>
+                <div class=""><a href="">招标预告</a></div>
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">中标公告</a></div>
+                <div class=""><a href="">中标公示</a></div>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+            <div style="text-align: center;" class="sev">
+                工程项目
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">工程信息</a></div>
+                <div class=""><a href="">项目动态</a></div>
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">项目信息</a></div>
+                <div class=""><a href="">vip项目</a></div>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+            <div style="text-align: center;" class="sev">
+                采购服务
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">发布采购</a></div>
+                <div class=""><a href="">政府采购</a></div>
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                <div class=""><a href="">采购公告</a></div>
+                <div class=""><a href="">企业采购</a></div>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+            <div style="text-align: center;" class="sev">
+                服务热线
+            </div>
+            <div class="row" style="display: flex;justify-content:space-around">
+                1234567890
+            </div>
+
+        </div>
+    </div>
+    <!-- 服务结束 -->
+</div>
+<!-- 中间内容结束 -->
+<!-- 底部 -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+                <a href="">关于我们</a> <span>-</span> <a href="">加入我们</a>
+                <span>-</span> <a href="">联系我们</a> <span>-</span>
+                <a href="">会员服务</a> <span>-</span> <a href="">业务合作</a>
+                <span>-</span> <a href="">在线联系</a> <span>-</span>
+                <a href="">友情链接</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+                北京顺立建设咨询公司&nbsp;&nbsp;Copyright © 2014-2019
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+                <a href="">电话：1234567890</a>&nbsp;&nbsp;
+                <a href="">传真：1234567890</a>&nbsp;&nbsp;
+                <a href="">邮箱：1234567890qq.com</a>&nbsp;&nbsp;
+                <a href="">QQ：1234567890</a>&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+                <a href="">地址：北京顺立建设咨询公司</a>&nbsp;&nbsp;
+                <a href="">ICP备1234567890号</a>&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+            <span
+                    style="display:inline-block;width:100px;height:100px;background:white;color: black"
+            >二维码</span
+            >
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/pagination.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/jquery.banner.revolution.min.js"></script>
+<script src="../../../jgw/js/projectinfo/projectinfo-history.js"></script>
+<script src="../../js/jquery.cubeportfolio.min.js"></script>
+<script src="../../js/portfolio-masonry-4col.js"></script>
+<script src="../../js/banner.js"></script>
+
+<script>
+    $(function () {
+        $(".news-tab li").click(function () {
+            $(this)
+                .siblings()
+                .removeClass("current");
+            $(this).addClass("current");
+            $(".news-container li").removeClass("one-li");
+            $(".news-container li")
+                .eq($(this).index())
+                .addClass("one-li");
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $(".chaxun-index").hover(
+            function () {
+                $(this)
+                    .children("div")
+                    .show();
+            },
+            function () {
+                $(this)
+                    .children("div")
+                    .hide();
+            }
+        );
+    });
+</script>
+<script>
+    //右侧返回顶部图标
+    $(function () {
+        var icon =
+            '<a class="gotoptop_icon" id="gotoptop_icon" href="#" title="返回顶部"></a>';
+        $("body").append(icon);
+        var $window = $(window);
+        var $gotoptop_icon = $("#gotoptop_icon");
+        var $body = window.opera
+            ? document.compatMode == "CSS1Compat"
+                ? $("html")
+                : $("body")
+            : $("html,body"); // opera fix
+        $(window).bind("scroll resize", function () {
+            if ($window.scrollTop() > 0) {
+                $gotoptop_icon.show();
+            } else {
+                $gotoptop_icon.hide();
+            }
+        });
+        $gotoptop_icon.bind("click", function () {
+            $body.animate({scrollTop: "0px"}, "fast");
+            return false;
+        });
+    });
+</script>
+<script>
+    //   右侧信息列表
+    $(function () {
+        function initTableCheckbox() {
+            var $thr = $("table thead tr");
+            var $checkAllTh = $(
+                '<th><input type="checkbox" id="checkAll" name="checkAll" /></th>'
+            );
+            /*将全选/反选复选框添加到表头最前，即增加一列*/
+            // $thr.prepend($checkAllTh);
+            /*“全选/反选”复选框*/
+            var $checkAll = $thr.find("input");
+            $checkAll.click(function (event) {
+                /*将所有行的选中状态设成全选框的选中状态*/
+                $tbr.find("input").prop("checked", $(this).prop("checked"));
+                /*并调整所有选中行的CSS样式*/
+                if ($(this).prop("checked")) {
+                    $tbr
+                        .find("input")
+                        .parent()
+                        .parent()
+                        .addClass("warning");
+                } else {
+                    $tbr
+                        .find("input")
+                        .parent()
+                        .parent()
+                        .removeClass("warning");
+                }
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+            /*点击全选框所在单元格时也触发全选框的点击操作*/
+            $checkAllTh.click(function () {
+                $(this)
+                    .find("input")
+                    .click();
+            });
+            var $tbr = $("table tbody tr");
+            var $checkItemTd = $(
+                '<td><input type="checkbox" name="checkItem" /></td>'
+            );
+            /*每一行都在最前面插入一个选中复选框的单元格*/
+            // $tbr.prepend($checkItemTd);
+            /*点击每一行的选中复选框时*/
+            $tbr.find("input").click(function (event) {
+                /*调整选中行的CSS样式*/
+                $(this)
+                    .parent()
+                    .parent()
+                    .toggleClass("warning");
+                /*如果已经被选中行的行数等于表格的数据行数，将全选框设为选中状态，否则设为未选中状态*/
+                $checkAll.prop(
+                    "checked",
+                    $tbr.find("input:checked").length == $tbr.length ? true : false
+                );
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+            /*点击每一行时也触发该行的选中操作*/
+            $tbr.click(function () {
+                $(this)
+                    .find("input")
+                    .click();
+            });
+        }
+
+        initTableCheckbox();
+    });
+
+</script>
+</html>

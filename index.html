@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>建工网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/tf.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="./css/project_infor.css" />
+    <link rel="stylesheet" href="../jgw/css/liMarquee.css">
+    <link rel="stylesheet" href="../jgw/css/signin.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="js/ip.js"></script>
+  </head>
+
+  <body onload="getUserInfo()">
+    <!-- 顶部 -->
+    <nav class="navbar navbar-inverse site-navbar">
+      <!-- 顶部第一栏 -->
+      <div class="yem-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-3">
+              欢迎来到建工网
+              <button class="log" onclick="alertlogin()">
+                登陆
+                
+              </button>
+              <button class="log" onclick="alertregister()">
+              注册
+                
+              </button>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              服务热线：123456789
+            </div>
+            <div class="col-md-6 col-xs-6 telephone">
+              <a href="../jgw/mycollection.html">我的收藏</a>&nbsp;&nbsp;
+              <a href="">客户服务</a>&nbsp;&nbsp;
+              <a href="">网站导航</a>&nbsp;&nbsp;
+              <a href="../jgw/postmessage.html">发布信息</a>&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- logo图第二栏 -->
+      <div class="top-logo">
+          <div class="container">
+            <div class="row">
+              <div class="pull-left col-md-2 col-xs-2">
+                <div style="height:80px">
+                  <!--<h1 style="">logo图</h1>-->
+                  <img
+                    src="images/logo/logo2.png"
+                    class="logo-index"
+                    width="150px"
+                    height="60px"
+                    style="margin-top: 10px"
+                  />
+                </div>
+              </div>
+              <div class="search col-md-6 col-xs-6">
+                <div class="search_cont col-md-5" style="font-size: 12px">
+                  <select name="information" id="infor">
+                    <!--  <option value="">信息类别</option>-->
+                  </select>
+                  <select name="location" id="region">
+                    <!-- <option value="">地区</option>-->
+                  </select>
+                </div>
+                <div class="searcharea col-md-7" >
+                  <div class="">
+                    <div class=" bar6 col-md-12">
+                      <form style="font-size: 12px">
+                        <input type="text" style="height: 40px;" placeholder="请输入您要搜索的内容..." />
+                        <button type="submit" style="height: 40px;"></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pull-right col-md-3 col-xs-3" style="margin-top:20px;font-size: 12px">
+                <p>咨询热线：138-6130-3238</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- 导航栏 -->
+      <div class="about-nav-py">
+        <div class="container">
+          <div class="navbar-header">
+            <img src="images/logo.png" class="meblie-logo" />
+            <button
+              type="button"
+              class="navbar-toggle collapsed jicheng"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav nav-top-quanju">
+              <li>
+                <a href="index.html" class="active-daohang">首页</a>
+              </li>
+              <li>
+                <a href="./project_inforomation.html">工程信息</a>
+              </li>
+              <li class="">
+                <a
+                  href="../jgw/bidding_information.html"
+                  
+                  >招标信息</span
+                ></a>
+                
+              </li>
+              <li>
+                <a href="../jgw/win_bidding.html">中标信息</a>
+              </li>
+              <li>
+                <a href="../jgw/purchase.html">采购信息</a>
+              </li>
+              <li>
+                <a href="../jgw/database.html">数据库</a>
+              </li>
+              <li>
+                <a href="../jgw/land_market.html">土地交易</a>
+              </li>
+              <li>
+                <a href="../jgw/meeting.html">会议信息</a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+    <!-- 顶部结束 -->
+    <!-- 轮播信息 -->
+    <div id="information_box" class="text-center" style="margin-top: 15px;height: 20px;overflow: hidden;">
+        <ul id="information_list1">
+          <li style="margin: 5px 0"><a href="" style="text-decoration:underline;">这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2019-09-09</span> </a></li>
+          <li style="margin: 5px 0"><a href="" style="text-decoration:underline;">这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2019-09-09</span> </a></li>
+          <li style="margin: 5px 0"><a href="" style="text-decoration:underline;">这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2019-09-09</span> </a></li>
+         </ul>
+         <ul id="information_list2"></ul>
+    </div>      
+    <!-- 轮播信息结束 -->
+    <!-- 轮播图部分 -->
+    <div id="wrapper" class="row" style="position: relative">
+      <!-- 供地计划 -->
+      <div
+        class="land_plan col-md-3 col-xs-3"
+        style="border:1px solid black;padding: 0 0;"
+      >
+        <div>
+          <div class="index-zhuanxian-top" style="position:relative">
+            <div class="word1">供地计划</div>
+            <div class="pull-right" style="position:absolute;top:0;right:5px">
+              更多>>>
+            </div>
+          </div>
+          <div class="index-zhuanxian-about">
+            <div class="txtMarquee-top">
+              <div class="bd">
+                <ul class="infoList" id="land-plan-list">
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 图片轮播 -->
+      <div class="fullwidthbanner-container col-md-5 col-xs-5">
+        <!-- <div class="fullwidthbanner">
+          <ul id="banner">
+            <li data-transition="3dcurtain-horizontal"  data-slotamount="15"  data-masterspeed="300">
+              <a href="https:www.baidu.com" target="_blank">
+                  <img src="images/slide3.jpg" alt="" />
+              </a>            
+            </li>
+
+            <li  data-transition="papercut" data-slotamount="15" data-masterspeed="300"  data-link="#" >
+              <img src="images/slide2.jpg" alt="" />
+            </li>
+            <li  data-transition="turnoff" data-slotamount="15" data-masterspeed="300">
+              <img src="images/slide1.jpg" alt="" />
+            </li>
+          </ul>
+        </div> -->
+        <div id="lunbobox">
+            <div id="toleft">
+                &lt;</div>
+                    <div class="lunbo" id="banner">
+                       
+                    </div>
+                    <div id="toright">&gt;</div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span></span>
+            </div>
+
+
+
+
+      </div>
+      <!-- 用户登陆 -->
+      <div
+        class="land_plan col-md-3 col-xs-3"
+        style="border:1px solid black; padding: 0 0"
+        id="login-or-userinfo"
+      >
+      
+
+
+
+
+
+        <!-- <div>
+          <div class="index-zhuanxian-top">
+            <div class="word2">用户登陆</div>
+          </div>
+          <div class="use_log">
+            <div class="input-group">
+              <span
+                class="input-group-addon glyphicon glyphicon-user"
+                id="basic-addon1"
+              ></span>
+              <input id="login-username"
+                type="text"
+                class="form-control"
+                placeholder="会员名/邮箱/手机号"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group">
+              <span
+                class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1" ></span>
+              <input id="login-password"
+                type="text"
+                class="form-control"
+                placeholder="登陆密码"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <div class="use_check" style="display:flex">
+            <input type="checkbox" id="boy" name="gender" />
+            <label for="">记住用户名 </label>
+          </div>
+          <div class="use_check" style="display:flex">
+            <input type="checkbox" id="boy" name="gender" />
+            <label for="">记住密码 </label>
+          </div>
+          <div class="use_check" style="display:flex">
+            
+            <input type="checkbox" id="boy" name="gender" id="" />
+            <label for="">自动登陆</label>
+          </div>
+          <div class="anniu">
+            <button class="log" 
+            onclick="login('index.html',$('#login-username').val(),$('#login-password').val(),'true')">登陆</button>
+            <a href="">忘记密码?</a>
+          </div>
+          <div class="anniu">
+            <a href="">还没账号?</a>
+            <button class="zc">点击注册</button>
+          </div>
+        </div> -->
+      </div>
+       <!-- 查看更多 -->
+    <div style="display:none;" id="lookmorelist">
+      <div class="text-center" style="margin-top:10px;font-size:18px;">权限中心</div>
+        <table style="margin: 10px auto">
+          <tbody>
+            <tr>
+              <td style="width: 120px">每天可浏览数量</td>
+              <td>100</td>
+            </tr>
+            <tr>
+                <td>可浏览剩余数量</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                  <td>每天批量下载数量</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                    <td>每天浏览数据库数</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                      <td>同时登陆人数</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>可查看的省</td>
+                        <td> 陕西省 河南省 广东省 江西省 江苏省 陕西省 河南省 广东省 江西省 江苏省 陕西省 河南省 广东省 江西省 江苏省 陕西省 河南省 广东省 江西省 江苏省 陕西省 河南省 广东省 江西省 江苏省 陕西省 河南省 广东省 江西省 江苏省 陕西省 河南省 广东省 江西省 江苏省 陕西省 河南省 广东省 江西省 江苏省</td>
+                      </tr>  
+                      <tr>
+                          <td>可查看的信息</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>是否能发布信息</td>
+                            <td>50</td>
+                          </tr>
+          </tbody>
+        </table>
+  
+      </div>
+      <!-- 查看更多结束 -->
+    </div>
+    <!-- 轮播结束 -->
+    <!-- 工程信息 -->
+    <div class="project">
+      <div class="container" style="padding:0;width: 100%">
+        <div class="blue">工程信息</div>
+        <div class="three" style="margin:15px 0">
+          <div class="col-md-6 col-xs-6 information">
+            <div class="row" style="background:rgb(200, 201, 201);color:black;height: 30px">
+              <div class="col-md-4 pull-left" style="line-height:30px;">工程信息</div>
+              <div class="col-md-2 pull-right" style="line-height:30px;">
+                <a href="../jgw/project_inforomation.html">更多>></a>
+                
+              </div>
+            </div>
+            <div style="padding-top:10px;">
+              <ul id="project_info"></ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-3 example" style="margin: 0 10px;">
+            <div class="row" style="height:49% ;border: 1px solid grey">
+              <div
+                style="width:100%;background:rgb(200, 201, 201);color:black;height: 30px;line-height: 30px;padding-left: 10px;"
+              >
+                类别
+              </div>
+              <div id="kinds" style="padding:10px 5px;">
+              </div>
+            </div>
+            <div
+              class="row"
+              style="height:49%;border: 1px solid grey;margin-top: 2%"
+            >
+              <div
+                style="width:100%;background:rgb(200, 201, 201);color:black;height: 30px;line-height: 30px;padding-left: 10px; "
+              >
+                阶段
+              </div>
+              <div id="pre_project" style="padding:10px 5px;">
+                <span><a href="">工程筹备</a>|</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-3 contact" style="padding:0">
+            <div style="width:100%;background:rgb(200, 201, 201);color:black;height: 30px;line-height: 30px;padding-left: 10px; ">
+              联系技巧
+            </div>
+            <div style="padding:10px;">
+              <p>
+                1.工程信息中的项目联系人只是线索、非关键人，所以电话联系时，重点是向其了解项目情况，并看是否能拉其做内线，切忌推销产品和技术。并尽量争取面谈、工地拜访和公司拜访的机会。
+              </p>
+              <p>
+                2.项目联系人可能每天都接到大量的咨询电话，很容易对陌生来电产生抵触，往往会推说他不负责该项目甚至立即挂断电话。遇到这种情况千万不要气馁，需要想好沟通方式，配合短信、邮件等争取先降低对方的抵触感，再进行联系。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 工程结束 -->
+    <div class="poster" id="index-ad-1">
+      <!--<a href='http://www.baidu.com' target='_blank'><img src='./images/news.jpg'   width='100%' height='100%' /></a>-->
+    </div>
+    <!-- 招标信息 -->
+    <div class="invest">
+      <div class="title">招标信息</div>
+      <div class="hot_search">
+        <div class="list col-md-7">
+          <label >热门搜索：</label>
+          <span id="search_kind">
+              
+             
+          </span>
+
+        </div>
+
+        <div class="icon col-md-4 pull-right" style="display: flex;
+        justify-content: space-around;">
+          <div class="col-md-3" onclick="alertlogin()">
+            <img
+              src="./images/denglu_1.png"
+              alt=""
+              width="25px"
+              height="25px"
+            />
+            <p>登陆</p>
+          </div>
+          <div class="col-md-3"  onclick="alertlogin()">
+            <img src="./images/star.png" alt="" width="25px" height="25px" />
+            <p>注册</p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="./images/fabuxinxi.png"
+              alt=""
+              width="25px"
+              height="25px"
+              class="col-md-offset-3"
+            />
+            <a href="../jgw/postmessage.html">发布信息</a>
+          </div>
+            <!-- <div class="col-md-3">
+             <p></p>
+          </div> -->
+        </div>
+      </div>
+      <div class="three_information">
+        <div
+          class="zb_notic col-md-6"
+          style="margin-right
+        :5px"
+        >
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-4 pull-left">招标公告</div>
+            <div class="col-md-2 pull-right">更多>></div>
+          </div>
+          <div style="padding-top:10px">
+            <ul id="zb_list">
+
+            </ul>
+          </div>
+        </div>
+        <div
+          class="zb_notic col-md-6"
+          style="margin-left
+        :5px"
+        >
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-4 pull-left">中标公告</div>
+            <div class="col-md-2 pull-right">更多>></div>
+          </div>
+          <div style="padding-top:10px">
+            <ul id="tendering-win-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 招标信息结束 -->
+    <!-- 采购信息 -->
+    <div class="invest">
+      <div class="title">采购信息</div>
+
+      <div class="three_information" style="margin:10px 0">
+          <div
+            class="zb_notic col-md-6"
+           style="margin-right: 5px;"
+          >
+            <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+              <div class="col-md-4 pull-left">中央采购</div>
+              <div class="col-md-2 pull-right">更多>></div>
+            </div>
+            <div style="padding-top:10px">
+              <ul id="local-procurement-center-list">
+  
+              </ul>
+            </div>
+          </div>
+          <div
+            class="zb_notic col-md-6"
+            style="margin-left: 5px;"
+          >
+            <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+              <div class="col-md-4 pull-left">地方采购</div>
+              <div class="col-md-2 pull-right">更多>></div>
+            </div>
+            <div style="padding-top:10px">
+              <ul id="local-procurement-list"></ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- 采购信息结束 -->
+    <!-- 两个广告位 -->
+    <div class="two_ad" id="index-ad-center">
+      <!--<div class='ad1 col-md-6 pull-left' style='margin-right:15px;padding: 0'>
+        <img src='./images/zs.jpg'   width='100%' height='100%' />
+      </div>
+      <div class="ad2 col-md-6 pull-right" style="margin-left:15px;padding: 0">
+        <img src="./images/slide6.jpg" alt="" width="100%" height="100%" />
+      </div>-->
+    </div>
+    <!-- 两个广告位结束 -->
+
+    <!-- 土地市场 -->
+    <div class="invest">
+      <div class="title">土地交易</div>
+      <div class="three_information" style="margin:10px 0">
+        <div class="zb_notic col-md-4">
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-4 pull-left">出让公告</div>
+            <div class="col-md-3 pull-right">更多>></div>
+          </div>
+          <div style="padding-top: 10px">
+            <ul id="giving-notice-list">
+            </ul>
+          </div>
+        </div>
+        <div class="zb_notic col-md-4" style="margin:0 5px">
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-4 pull-left">地块公示</div>
+            <div class="col-md-3 pull-right">更多>></div>
+          </div>
+          <div style="padding-top: 10px">
+            <ul id="plot-public-list">
+            </ul>
+          </div>
+        </div>
+        <div class="zb_notic col-md-4">
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-4 pull-left">结构公告</div>
+            <div class="col-md-3 pull-right">更多>></div>
+          </div>
+          <div style="padding-top: 10px">
+            <ul id="structure-announcement-list">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 土地市场结束 -->
+
+    <!-- 会议信息 -->
+    <div class="invest">
+      <div class="title" class="col-md-6">会议信息/ppp项目</div>
+      <div class="three_information" style="margin:10px 0">
+        <div class="zb_notic col-md-6" style="margin-right: 5px">
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-3 pull-left">会议信息</div>
+            <div class="col-md-2 pull-right">更多>></div>
+          </div style="padding-top: 10px">
+          <div style="padding-top: 10px"> 
+            <ul id="meeting-nformation-list">
+
+            </ul>
+          </div>
+        </div>
+        <div class="zb_notic col-md-6" style="margin-left: 5px">
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-3 pull-left">ppp项目</div>
+            <div class="col-md-2 pull-right">更多>></div>
+          </div>
+          <div style="padding-top: 10px">
+            <ul id="index-iteminfo-ppp">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 会议信息结束 -->
+    <!-- ppp项目 -->
+    <!-- <div class="invest">
+      <div class="title">ppp项目</div>
+      <div class="three_information" style="margin:10px 0">
+        <div class="zb_notic col-md-6">
+          <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
+            <div class="col-md-3 pull-left">ppp项目</div>
+            <div class="col-md-2 pull-right">更多>></div>
+          </div>
+          <div>
+            <ul id="index-iteminfo-ppp">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ppp项目结束 -->
+
+    <div class="poster" id="index-ad-floor">
+    <!--  <a href=""><img src="./images/news.jpg" width="100%" height="100%" /></a>-->
+    </div>
+
+
+    <!-- 友情链接（通行） -->
+    <div class="invest">
+      <div class="title">友情链接</div>
+      <div class="link_info" style="margin:0px 0">
+        
+            <div class="link" style="width: 100%" id="firend-ship-link1">  
+            </div>
+       
+
+        
+       
+        <!-- <div class="link" id="firend-ship-link2">
+
+        </div> -->
+      </div>
+    </div>
+    <!-- 友情链接（通行）结束 -->
+    <!-- 相关链接（通行） -->
+    <div class="invest">
+        <div class="title">相关链接</div>
+        <div class="related_link" style="margin:0px 0">
+            <div class="" style="display:flex;margin: 15px 0">
+              <span style="display:inline-block;margin: 8px 5px" >政府部门</span>
+              <select name="" id="link_list" onchange="show(this)" style="background: white">
+                <option value="" style="height: 30px" style="background: white">请选择</option>
+              </select>
+                <!-- <div class="input-group">
+                  <input type="text" class="form-control" aria-label="..." placeholder="政府部门" disabled="disabled">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" id="link_list">
+                      
+                    </ul>
+                  </div> 
+                </div> -->
+              </div>
+              <div class="" style="display:flex;margin: 15px 0">
+                  <span style="display:inline-block;margin: 8px 5px" >行业协会</span>
+                  <select name="" id="industy_list" onchange="show1(this)" style="background: white">
+                      <option value="" style="height: 30px" style="background: white">请选择</option>
+                    </select>
+                    <!-- <div class="input-group">
+                      <input type="password" class="form-control" aria-label="..." placeholder="行业协会">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right" id="industy_list">
+                         
+                        </ul>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="" style="display:flex;margin: 15px 0">
+                      <span style="display:inline-block;margin: 8px 5px" >新闻媒体</span>
+                      <select name="" id="media_list" onchange="show2(this)" style="background: white">
+                          <option value="" style="height: 30px" style="background: white">请选择</option>
+                        </select>
+                        <!-- <div class="input-group">
+                          <input type="text" class="form-control" aria-label="..." placeholder="新闻媒体">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right" id="media_list">
+                              
+                            </ul>
+                          </div>
+                        </div> -->
+                      </div>
+            </div><!-- /.row -->
+
+        </div>
+      </div>
+    <!-- 相关链接（通行）结束 -->
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+                <a href="../jgw/aboutme.html">关于我们</a> <span>-</span>
+                <a href="">加入我们</a> <span>-</span>
+                <a href="">联系我们</a> <span>-</span>
+                <a href="">会员服务</a> <span>-</span>
+                <a href="">业务合作</a> <span>-</span>
+                <a href="../jgw/onlinecontact.html">在线联系</a> <span>-</span>
+                <a href="../jgw/frendlylink.html">友情链接</a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">北京顺立建设咨询公司&nbsp;&nbsp;Copyright © 2014-2019</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+              <a href="">电话：1234567890</a>&nbsp;&nbsp;
+              <a href="">传真：1234567890</a>&nbsp;&nbsp;
+              <a href="">邮箱：1234567890qq.com</a>&nbsp;&nbsp;
+              <a href="">QQ：1234567890</a>&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+              <a href="">地址：北京顺立建设咨询公司</a>&nbsp;&nbsp;
+              <a href="">ICP备1234567890号</a>&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer-bottom">
+              <span style="display:inline-block;width:100px;height:100px;background:white;color: black">二维码</span>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部结束 -->
+    <!-- 底部固定栏 -->
+   <!-- <div style="width:
+    100px;height:130px;background:white;border-radius: 10px;position: fixed;bottom: 5px;right: 10%;border:1px solid  grey;">
+      <div style="font-size:15px;text-align:center;margin-top: 10px;color:#0066cc">
+        咨询中心
+      </div>
+      <div style="margin:10px 5px">
+        <img src="./images/phone.png" alt="" style="height:30px;width:28px">12345678
+      </div>
+      <div style="margin:10px 5px">
+          <img src="./images/consult.png" alt="" style="height:32px;width:30px">在线咨询
+        </div>
+    </div> -->
+    <!-- 登陆注册弹窗 -->
+    <div id="loginalert" style="display: none;width: 516px;height: 600px;border: 1px solid red;position: fixed;top: 8%;left: 32%;z-index: 200;background: white;" >
+        <p onclick="closeclose()" class="closelogin" >
+          <img src="../jgw/images/close.png" alt="" style="margin-left: 94%;width: 30px">
+          
+        </p>
+      <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked/><label for="tab-1" class="tab" >登录</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up" /><label for="tab-2" class="tab">注册</label>
+        <div class="login-form">
+          <div class="sign-in-htm">
+            <div class="group">
+              <label for="user" class="label">用户名</label>
+              <input id="user" type="text" class="input" placeholder="用户名/手机号"/>
+            </div>
+            <div class="group">
+              <label for="pass" class="label">密&nbsp;&nbsp;&nbsp;码</label>
+              <input id="pswd" type="password" class="input" data-type="password" placeholder="请输入密码" />
+            </div>
+
+             <!-- 图形验证码 -->
+             <div class="group" style="clear: left;position: relative;">
+                <label for="pass" class="label">验证码</label>
+                <input id="pass" type="text" class="input" placeholder="请输入图片验证码"
+                style="width: 42%;"/>
+                <a style="width: 100px;
+                height: 42px;
+                display: inline-block;
+                margin-left: 15px;
+                background: #1161ee;
+                color: white;position: absolute;top: 6px;" onclick="changepic()" class="pic">
+                <img src="http://192.168.0.104:8081/captcha/captchaImage?type=char" alt="" width="100%" height="100%">
+              </a>
+              </div>
+
+
+            <div class="group">
+              <label style="color: black;width: 50%;" ><input id="remember" type="checkbox" onchange="changePasswordStatus()" style="width: 20%">记住密码</label>
+              <input hidden name="remember" id="rememberText">
+            </div>
+            <div class="group">
+              <input type="button" class="button" value="登录" onclick="login()"/>
+            </div>
+            <div class="foot-lnk">
+              <a href="#forgot">忘记密码?</a>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+          <div class="sign-up-htm" style=" overflow-y:auto; overflow-x:auto; width:400px; height:460px;">
+            <div style="height: 10px"></div>
+            <!-- 用户名 -->
+            <div class="group">
+              <label for="user" class="label">用户名&nbsp;&nbsp;&nbsp;</label>
+              <input id="user1" type="text" class="input" name="username" onblur="checkusername()" placeholder="6-16字母或数字，不区分大小写"/>
+              <small class="ck_name" style="margin-left: 20px;"></small>
+            </div>
+            <!-- 密码 -->
+            <div class="group" style="position: relative">
+              <label for="pass" class="label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+              <input id="psw" type="password" class="input" length="16"   placeholder="可使用字母、数字和符号的组合" onkeyup="showpassword()" name="password"/>
+              <span style="position:absolute;right:26px;top:10px" onclick="showpsd()"><img src="../jgw/images/eye.png" alt=""></span>
+              
+              <table border="0px" cellpadding="0px" cellspacing="1px" style="width: 64%;margin-left: 103px;">
+                <tr height="20px" >
+                  <td width="40px"  id="lv1" style="border-top: 3px solid darkgrey;">弱</td>
+                  <td width="40px"  id="lv2" style="border-top: 3px solid darkgrey;">中</td>
+                  <td width="40px"  id="lv3" style="border-top: 3px solid darkgrey;">强</td>
+                </tr>
+              </table>
+              <small class="check_psd" style="margin-left: 113px;"></small>
+            </div>
+            <!-- 确认密码 -->
+            <div class="group">
+              <label for="pass" class="label">确认密码</label>
+              <input id="confirmpwd" type="password" class="input" data-type="password" onblur="check_pwd()" placeholder="请确认密码"/>						
+              <small class="con_pwd" style="margin-left: 20px;"></small>
+            </div>
+            <div>联系人信息</div>
+            <!-- 公司名称 -->
+            <div class="group">
+              <label for="pass" class="label">公司名称</label>
+              <input id="pass" type="text" class="input" placeholder="请输入公司全称" name="corporateName"/>
+            </div>
+            <!-- 联系人 -->
+            <div class="group">
+              <label for="pass" class="label">联系人&nbsp;&nbsp;&nbsp;</label>
+              <input id="pass" type="text" class="input" placeholder="请输入姓名"/>
+            </div>
+            <!-- 工作地 -->
+            <div class="group">
+              <label for="pass" class="label">工作地&nbsp;&nbsp;&nbsp;</label>
+              <!-- <form method="get" action="#"> -->
+                <input type="text" hidden name="workplace" id="hide_information">
+                省份：<select id="province" >
+                  <option value="陕西省">陕西省</option>
+                </select>
+                城市：<select id="city">
+                  <option value="西安市">西安市</option>
+                </select>
+              <!-- </form> -->
+              <!-- <input id="pass" type="text" class="input" placeholder="请输入姓名"/> -->
+            </div>
+            <!-- 职务 -->
+            <div class="group">
+              <label for="pass" class="label">职务&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input id="pass" type="text" class="input" placeholder="请输入职务" name="job"/>
+            </div>
+            <!-- 固定电话 -->
+            <div class="group">
+              <label for="pass" class="label">固定电话</label>
+              <input id="telephone" type="text" class="input" placeholder="区号-电话" onblur="check_tele()" name="telephone"/>
+              <small class="check_tele" style="margin-left: 113px;"></small>
+            </div>
+            <!-- 邮箱 -->
+            <div class="group">
+              <label for="pass" class="label">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input id="email" type="text" class="input" placeholder="请输入邮箱" onblur="checkemail()" name="email"/>
+              <small class="ck_e" style="margin-left: 113px;"></small>
+            </div>
+            <!-- 手机号 -->
+            <div class="group">
+              <label for="pass" class="label">手机号&nbsp;&nbsp;&nbsp;</label>
+              <input id="phonenumber" type="text" class="input" placeholder="请输入手机号" onblur="checkphone()" name="phoneNumber"/>
+              <small class="ck_phone" style="margin-left: 113px;"></small>
+            </div>
+            <!-- 手机验证码 -->
+            <div class="group">
+              <label for="pass" class="label">验证码&nbsp;&nbsp;&nbsp;</label>
+              <input id="" type="text" class="input" name="code" placeholder="请输入短信验证码" style="width: 39%;"/>
+              <button style="width: 100px;
+              display: inline-block;
+              font-size: 13px;
+              text-align: center;
+              height: 42px;
+              line-height: 42px;
+              margin-left: 15px;
+              background: #1161ee;
+              color: white;" onclick="aquire_code(this)" id="">获取短信验证码</button>
+            </div>
+           
+            <div class="group" style="clear: left;">
+              <input id="check1" type="checkbox" class="check" checked />
+              <label for="check"><span class="icon"></span>我已经阅读并同意《建工网会员服务条款》中的各项内容同意协议并注册（注册成功即可查看五条优质信息）</label>
+              
+            </div>
+            <div class="group">
+              <input type="button" class="button" value="注册" onclick="regist()"/>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    <!-- 灰色蒙版 -->
+    <div id="blackshadow" style="display: none;position: fixed">
+
+    </div>
+   
+  </body>
+  <script src="../jgw/js/signin.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- <script src="../jgw/js/jquery-1.8.3.min.js"></script> -->
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- <script src="../jgw/js/jquery-1.8.3.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery.liMarquee.js"></script>
+ 
+  <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
+  <script
+    type="text/javascript"
+    src="js/jquery.banner.revolution.min.js"
+  ></script>
+  <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+  <script type="text/javascript" src="js/portfolio-masonry-4col.js"></script>
+  <script type="text/javascript" src="js/banner.js"></script>
+  <!--向上滚动-->
+  <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="./js/index.js"></script>
+  <script type="text/javascript">
+    jQuery(".txtMarquee-top").slide({
+      mainCell: ".bd ul",
+      autoPlay: true,
+      effect: "topMarquee",
+      vis: 8,
+      interTime: 50
+    });
+  </script>
+  <script>
+    $(function() {
+      $(".news-tab li").click(function() {
+        $(this)
+          .siblings()
+          .removeClass("current");
+        $(this).addClass("current");
+        $(".news-container li").removeClass("one-li");
+        $(".news-container li")
+          .eq($(this).index())
+          .addClass("one-li");
+      });
+    });
+  </script>
+  <script>
+    $(function() {
+      $(".chaxun-index").hover(
+        function() {
+          $(this)
+            .children("div")
+            .show();
+        },
+        function() {
+          $(this)
+            .children("div")
+            .hide();
+        }
+      );
+    });
+  </script>
+  <script>
+    //右侧返回顶部图标
+    $(function() {
+      var icon =
+        '<a class="gotoptop_icon" id="gotoptop_icon" href="#" title="返回顶部"></a>';
+      $("body").append(icon);
+      var $window = $(window);
+      var $gotoptop_icon = $("#gotoptop_icon");
+      var $body = window.opera
+        ? document.compatMode == "CSS1Compat"
+          ? $("html")
+          : $("body")
+        : $("html,body"); // opera fix
+      $(window).bind("scroll resize", function() {
+        if ($window.scrollTop() > 0) {
+          $gotoptop_icon.show();
+        } else {
+          $gotoptop_icon.hide();
+        }
+      });
+      $gotoptop_icon.bind("click", function() {
+        $body.animate({ scrollTop: "0px" }, "fast");
+        return false;
+      });
+    });
+
+    // 弹出登陆注册
+    function alertlogin(){
+      
+      $('#loginalert').css('display','block');
+      $('#blackshadow').css('display','block');
+      $('.sign-in').css('checked','checked')
+    }
+    // 关闭登陆注册页面
+    function closelogin(){
+      $('#loginalert').css('display','none');
+      $('#blackshadow').css('display','none');
+      console.log("123456")  
+    }
+
+    function closeclose(){
+      $('#loginalert').css('display','none');
+      $('#blackshadow').css('display','none');
+      console.log("123456")
+    }
+
+    // 弹出注册页面
+    function alertregister(){
+      $('#loginalert').css('display','block');
+      $('#blackshadow').css('display','block');
+    }
+
+
+    
+
+
+  </script>
+</html>

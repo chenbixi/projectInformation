@@ -1,0 +1,26 @@
+
+.head-pic img {
+    width: 82px;
+    height: 83px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+.head-pic {
+    height: 109px;
+    width: 90px;
+    margin: auto;
+}
+.user-info-backgrund{
+    text-align: center;
+}
+.text-red{
+    color: red;
+}
+.user-name-text{
+    font-weight: 700;
+    font-size: 13px;
+}
+.vip-date-text{
+    font-size: 12px;
+}

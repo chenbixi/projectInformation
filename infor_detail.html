@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>建工网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/tf.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="./css/project_infor.css" />
+    <link rel="stylesheet" href="./css/pagination.css" />
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="js/ip.js"></script>
+  </head>
+
+  <body style="position: relative">
+    <!-- 顶部 -->
+    <nav class="navbar navbar-inverse site-navbar">
+      <!-- 顶部第一栏 -->
+      <div class="yem-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-xs-4">
+              欢迎来到建工网
+              <button class="log">登陆</button>
+              <button class="log">注册</button>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              服务热线：123456789
+            </div>
+            <div class="col-md-5 col-xs-5 telephone">
+              <a href="">我的收藏</a>&nbsp;&nbsp;
+              <a href="">客户服务</a>&nbsp;&nbsp;
+              <a href="">网站导航</a>&nbsp;&nbsp;
+              <a href="">发布信息</a>&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- logo图第二栏 -->
+      <div class="top-logo">
+        <div class="container">
+          <div class="row">
+            <div class="pull-left col-md-2 col-xs-2">
+              <div style="height:80px">
+                <!--<h1 style="">logo图</h1>-->
+                <img
+                  src="images/logo/logo2.png"
+                  class="logo-index"
+                  width="150px"
+                  height="60px"
+                  style="margin-top: 10px"
+                />
+              </div>
+            </div>
+            <div class="search col-md-6 col-xs-6">
+              <div class="search_cont col-md-5">
+                <select name="information" id="infor">
+                  <!--  <option value="">信息类别</option>-->
+                </select>
+                <select name="location" id="region">
+                  <!-- <option value="">地区</option>-->
+                </select>
+              </div>
+              <div class="searcharea col-md-7">
+                <div class="">
+                  <div class=" bar6 col-md-12">
+                    <form>
+                      <input
+                        type="text"
+                        style="height: 40px;"
+                        placeholder="请输入您要搜索的内容..."
+                      />
+                      <button type="submit" style="height: 40px;"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pull-right col-md-3 col-xs-3" style="margin-top:20px">
+              <p>咨询热线：138-6130-3238</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="about-nav-py">
+        <div class="container">
+          <div class="navbar-header">
+            <img src="images/logo.png" class="meblie-logo" />
+            <button
+              type="button"
+              class="navbar-toggle collapsed jicheng"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav nav-top-quanju">
+                  <li>
+                    <a href="index.html" >首页</a>
+                  </li>
+                  <li>
+                    <a href="./project_inforomation.html" class="active-daohang">工程信息</a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="../jgw/bidding_information.html"
+                      
+                      >招标信息</span
+                    ></a>
+                    
+                  </li>
+                  <li>
+                    <a href="../jgw/win_bidding.html">中标信息</a>
+                  </li>
+                  <li>
+                    <a href="../jgw/purchase.html">采购信息</a>
+                  </li>
+                  <li>
+                    <a href="../jgw/database.html">数据库</a>
+                  </li>
+                  <li>
+                    <a href="../jgw/land_market.html">土地交易</a>
+                  </li>
+                  <li>
+                    <a href="../jgw/meeting.html">会议信息</a>
+                  </li>
+                </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+    <!-- 顶部结束 -->
+    <!-- 当前位置 -->
+    <div style="width: 77.5%;margin:5px auto">
+      当前位置：
+    </div>
+    <!-- 当前位置结束 -->
+    <!-- 中间内容 -->
+    <div class="pro_infor_cont">
+      <div
+        class="row"
+        style="width: 77.5%;margin:5px auto;display:flex;justify-content: space-between"
+      >
+        <!-- 左侧内容 -->
+        <div
+          class="col-md-2"
+          style="border: 1px solid grey;padding: 0;margin-right: 10px;"
+        >
+          <!-- 用户登陆 -->
+          <div class="land_plan col-md-12 col-xs-12" style="padding: 0">
+            <div>
+              <div class="" style="background: #0066cc">
+                <div
+                  class="word2"
+                  style="text-align: center;color:white;;padding: 5px 0;"
+                >
+                  用户登陆
+                </div>
+              </div>
+              <div class="use_log">
+                <div class="input-group">
+                  <span
+                    class="input-group-addon glyphicon glyphicon-user"
+                    id="basic-addon1"
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="用户名"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group">
+                  <span
+                    class="input-group-addon glyphicon glyphicon-lock"
+                    id="basic-addon1"
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="登陆密码"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="use_check" style="display:flex">
+                <input type="checkbox" id="boy" name="gender" />
+                <label for="">记住用户名 </label>
+              </div>
+              <div class="use_check" style="display:flex">
+                <input type="checkbox" id="boy" name="gender" />
+                <label for="">记住密码 </label>
+              </div>
+              <div class="use_check" style="display:flex">
+                <input type="checkbox" id="boy" name="gender" />
+                <label for="">自动登陆</label>
+              </div>
+              <div class="anniu">
+                <button class="log" style="background: #0066cc">登陆</button>
+                <a href="">忘记密码?</a>
+              </div>
+              <div class="anniu" style="display: flex;">
+                <p>还没会员账号?</p>
+                <a href="" style="margin-left: 5px;color:#0066cc">免费注册</a>
+              </div>
+            </div>
+          </div>
+          <!-- 用户登陆结束 -->
+          <!-- 工程阶段 -->
+          <div class="pro_stage col-md-12" style="padding: 0">
+            <div
+              style="font-size: 14px;border: 1px solid  #0066cc;padding:0px;text-align: center;background: #0066cc;color: white;"
+              class="title"
+            >
+              工程阶段
+            </div>
+            <div>
+              <ul>
+                <li><a href="">工程筹备</a></li>
+                <li><a href="">勘察设计</a></li>
+                <li><a href="">主体施工</a></li>
+                <li><a href="">设备安装</a></li>
+                <li><a href="">装饰装修</a></li>
+                <li><a href="">园林景观</a></li>
+                <li><a href="">竣工测试</a></li>
+                <li><a href="">其它阶段</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 工程阶段结束 -->
+          <!-- 工程类别 -->
+          <div class="pro_stage col-md-12" style="padding: 0">
+            <div
+              style="font-size: 14px;border: 1px solid  #0066cc;padding:0px;text-align: center;background: #0066cc;color: white;"
+              class="title"
+            >
+              工程类别
+            </div>
+            <div>
+              <ul>
+                <li><a href="">住宅社区</a></li>
+                <li><a href="">文化体育</a></li>
+                <li><a href="">展览观演</a></li>
+                <li><a href="">卫生医疗</a></li>
+                <li><a href="">酒店服务</a></li>
+                <li><a href="">工业建筑</a></li>
+                <li><a href="">市政道路</a></li>
+                <li><a href="">园林景观</a></li>
+                <li><a href="">商业综合</a></li>
+                <li><a href="">行政办公</a></li>
+                <li><a href="">农业水利</a></li>
+                <li><a href="">环保节能</a></li>
+                <li><a href="">交通运输</a></li>
+                <li><a href="">公用建筑</a></li>
+                <li><a href="">特种工程</a></li>
+                <li><a href=""> 其它</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 工程类别结束 -->
+          <!-- 我的收藏 -->
+          <div class="pro_stage col-md-12" style="padding: 0">
+            <div
+              style="font-size: 14px;border: 1px solid  #0066cc;padding:0px;text-align: center;background: #0066cc;color: white;"
+              class="title"
+            >
+              我的收藏
+            </div>
+          </div>
+          <!-- 我的收藏结束 -->
+          <!-- 我的浏览历史 -->
+          <div class="pro_stage col-md-12" style="padding: 0">
+            <div
+              style="font-size: 14px;border: 1px solid  #0066cc;padding:0px;text-align: center;background: #0066cc;color: white;"
+              class="title"
+            >
+              浏览历史
+            </div>
+          </div>
+          <!-- 我的浏览历史结束 -->
+          <!-- 热门信息列表 -->
+          <div class="pro_stage col-md-12" style="padding: 0">
+            <div
+              style="font-size: 14px;border: 1px solid  #0066cc;padding:0px;text-align: center;background: #0066cc;color: white;"
+              class="title"
+            >
+              热门信息列表
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="">信息标题</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href="">更多>></a>
+                </li>
+                <li>
+                  <a href="">信息标题</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href="">更多>></a>
+                </li>
+                <li>
+                  <a href="">信息标题</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href="">更多>></a>
+                </li>
+                <li>
+                  <a href="">信息标题</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href="">更多>></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 热门信息列表结束 -->
+        </div>
+        <!-- 左侧内容结束 -->
+
+        <!-- 右侧部分 -->
+        <div
+          class="col-md-10"
+          style="border: 1px solid grey;padding: 0;margin-left: 10px;"
+        >
+          <!-- 信息详情 -->
+          <!-- 信息详情的标题 -->
+          <div style="height: 20px"></div>
+          <div class="title" style="margin: 15px 0;">
+            <!-- <div class="row" style="margin: 15px 0">
+              <div class="col-md-12 text-center" style="font-size: 25px">
+                云南省烟草烟叶公司2019年打包带采购项目
+              </div>
+            </div> -->
+
+            <!-- <div class="row" style="margin: 8px 0">
+              <div class="col-md-12 text-center">
+                发布者：<span>admin</span> 发布时间：<span>2019-09-09</span>
+                所属地区：<span><a href="">北京</a></span> 点击次数：<span
+                  >33</span
+                >
+              </div>
+            </div> -->
+            <!-- <div class="row" style="margin: 8px 0">
+              <div class="col-md-12 text-center">
+                <button class="back_btn">收藏工程</button>
+                <button class="back_btn">下载工程</button>
+                <button class="back_btn ">打印工程</button>
+              </div>
+            </div> -->
+          </div>
+          <div style="height: 15px"></div>
+          <!-- 信息详情的标题结束 -->
+          <!-- 正文 -->
+          <div id="projctinfo-content">
+            <!--  <div class="title" style="margin: 15px 0;">
+                  <div class="row" style="margin: 15px 0">
+                      <div class="col-md-12 text-center" style="font-size: 25px">
+                          云南省烟草烟叶公司2019年打包带采购项目
+                      </div>
+                  </div>
+
+                  <div class="row" style="margin: 8px 0">
+                      <div class="col-md-12 text-center">
+                          发布者：<span>admin</span> 发布时间：<span>2019-09-09</span>
+                          所属地区：<span><a href="">北京</a></span> 点击次数：<span
+                      >33</span
+                      >
+                      </div>
+                  </div>
+                  <div class="row" style="margin: 8px 0">
+                      <div class="col-md-12 text-center">
+                          <button class="back_btn">收藏工程</button>
+                          <button class="back_btn">下载工程</button>
+                          <button class="back_btn ">打印工程</button>
+                      </div>
+                  </div>
+              </div>
+              <div style="height: 15px"></div>
+              &lt;!&ndash; 信息详情的标题结束 &ndash;&gt;
+              &lt;!&ndash; 正文 &ndash;&gt;
+              <div class="main_body" style="height: 77%">
+                  <div class="body_page" style=" overflow-y:scroll; overflow-x:auto;  height:850px;">
+
+                      <table id="process-demo-2" class="tb tb-b c-100 c-t-center" style="margin: 0 auto">
+                          <thead>
+
+                          </thead>
+                          <tbody>
+                          <tr>
+                              <td class="titla_name">标题：</td>
+                              <td colspan=3 style="text-align: left;padding: 10px 20px;">贵州铜仁市松桃苗人古城旅游基础设施建设项目</td>
+                              &lt;!&ndash; <td>11111</td>
+                              <td>22222</td>
+                              <td>SuZhouCity</td> &ndash;&gt;
+                          </tr>
+                          <tr>
+                              <td class="titla_name">是否优质</td>
+                              <td style="width: 200px">否</td>
+                              <td class="titla_name">地区</td>
+                              <td>贵州省铜仁市</td>
+                          </tr>
+                          <tr>
+
+                              <td class="titla_name">占地面积</td>
+                              <td>&#45;&#45;</td>
+                              <td class="titla_name">建筑面积</td>
+                              <td>&#45;&#45;</td>
+                          </tr>
+                          <tr>
+                              <td class="titla_name">工程类别</td>
+                              <td>照明/排水/管网/其他市政设施</td>
+                              <td class="titla_name">工程造价</td>
+                              <td>&#45;&#45;</td>
+                          </tr>
+                          <tr>
+                              <td class="titla_name">项目类型</td>
+                              <td>uuuuu</td>
+                              <td class="titla_name">hhhhh</td>
+                              <td>ShangHaiCity</td>
+                          </tr>
+                          <tr>
+                              <td class="titla_name">开工日期</td>
+                              <td>&#45;&#45;</td>
+                              <td class="titla_name">结束日期</td>
+                              <td>&#45;&#45;</td>
+                          </tr>
+                          <tr>
+                              <td class="titla_name">发布时间</td>
+                              <td>&#45;&#45;</td>
+                              <td>更新时间</td>
+                              <td class="titla_name">&#45;&#45;</td>
+                          </tr>
+                          <tr>
+                              <td class="titla_name">承建商</td>
+                              <td>&#45;&#45;</td>
+                              <td>设计师</td>
+                              <td class="titla_name">&#45;&#45;</td>
+                          </tr>
+                          <tr>
+                              <td class="titla_name">工程地址</td>
+                              <td colspan=3>&#45;&#45;</td>
+
+                          </tr>
+                          <tr>
+                              <td class="titla_name">工程概况</td>
+                              <td colspan=3>
+                                  <p style="word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;text-align: left;padding: 10px 20px;">
+                                      项目为旅游基础设施，包含：◆水系管网工程，市政给排水工程，市政电气工程◆市政道路工程，小区道路工程，浆砌片石挡墙◆悬臂式挡墙，扶壁式路肩挡墙，钢筋混凝土挡墙◆室外给排水工程，强弱电工程，污水处理系统◆AB区安防，CD区安防工程\r\n项目为旅游基础设施，包含：◆水系管网工程，市政给排水工程，市政电气工程◆市政道路工程，小区道路工程，浆砌片石挡墙◆悬臂式挡墙，扶壁式路肩挡墙，钢筋混凝土挡墙◆室外给排水工程，强弱电工程，污水处理系统◆AB区安防，CD区安防工程\r\n</p>
+                              </td>
+
+                          </tr>
+                          <tr>
+                              <td class="titla_name">跟进记录</td>
+                              <td colspan=3>
+                                  <p style="word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;text-align: left;padding: 10px 20px;">
+                                      2019/7/11：2019-07中旬项目在施工中标公示，第一中标候选单位：贵州贵星禹建设工程有限公司。\r\n2019/6/14：2019-06中旬项目在施工招标，投标文件递交的截止时间为2019年07月10日。</p>
+                              </td>
+
+                          </tr>
+                          <tr>
+                              <td class="titla_name">甲方</td>
+                              <td colspan=3>
+                                  <p style="word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;text-align: left;padding: 10px 20px;">甲方 -
+                                      发展商\r\n贵州松桃永昌投资开发有限公司(贵州省-铜仁市-松桃苗族自治县)\r\n联系人：龙松 手机：15185893876
+                                      地址：贵州省铜仁市松桃苗族自治县贵州松桃经济开发区企业服务中心13楼\r\n\r\n</p>
+                              </td>
+
+                          </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>-->
+          </div>
+          <!-- 正文结束 -->
+          <!-- 正文底部 -->
+          <div class="body_btn">
+            <div class="row" style="margin: 8px 0">
+              <div class="col-md-12 text-center">
+                <button class="back_btn" style="margin-right: 20px;">
+                  <a href="../jgw/index.html">返回首页</a>
+                </button>
+                
+                <button class="back_btn">
+                  <a href="#">返回顶部</a>                 
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 正文底部结束 -->
+
+          <!-- 信息详情结束 -->
+        </div>
+        <!-- 右侧部分结束 -->
+      </div>
+      <div
+        class="serve_link row"
+        style="width: 77.5%;margin:5px auto;display:flex;justify-content: space-between;border: 1px solid grey;"
+      >
+        <div class="col-md-2" style="padding: 0;">
+          <div style="text-align: center;">
+            客户服务
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">免费注册</a></div>
+            <div class=""><a href="">会员服务</a></div>
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">在线客服</a></div>
+            <div class=""><a href="">意见建议</a></div>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+          <div style="text-align: center;">
+            招标服务
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">招标公告</a></div>
+            <div class=""><a href="">招标预告</a></div>
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">中标公告</a></div>
+            <div class=""><a href="">中标公示</a></div>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+          <div style="text-align: center;">
+            工程项目
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">工程信息</a></div>
+            <div class=""><a href="">项目动态</a></div>
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">项目信息</a></div>
+            <div class=""><a href="">vip项目</a></div>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+          <div style="text-align: center;">
+            采购服务
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">发布采购</a></div>
+            <div class=""><a href="">政府采购</a></div>
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            <div class=""><a href="">采购公告</a></div>
+            <div class=""><a href="">企业采购</a></div>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 0;">
+          <div style="text-align: center;">
+            服务热线
+          </div>
+          <div class="row" style="display: flex;justify-content:space-around">
+            1234567890
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 中间内容结束 -->
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <a href="">关于我们</a> <span>-</span> <a href="">加入我们</a>
+            <span>-</span> <a href="">联系我们</a> <span>-</span>
+            <a href="">会员服务</a> <span>-</span> <a href="">业务合作</a>
+            <span>-</span> <a href="">在线联系</a> <span>-</span>
+            <a href="">友情链接</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            北京顺立建设咨询公司&nbsp;&nbsp;Copyright © 2014-2019
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <a href="">电话：1234567890</a>&nbsp;&nbsp;
+            <a href="">传真：1234567890</a>&nbsp;&nbsp;
+            <a href="">邮箱：1234567890qq.com</a>&nbsp;&nbsp;
+            <a href="">QQ：1234567890</a>&nbsp;&nbsp;
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <a href="">地址：北京顺立建设咨询公司</a>&nbsp;&nbsp;
+            <a href="">ICP备1234567890号</a>&nbsp;&nbsp;
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <span
+              style="display:inline-block;width:100px;height:100px;background:white;color: black"
+              >二维码</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部结束 -->
+    <!-- 错误弹出框 -->
+    <div style="width: 300px;height:100px;border: 1px solid grey;position: absolute;top: 22%;left: 46%;font-size: 20px;display:none" class="text-center" id="erralert">
+      <p style="background: #1D8CE0;height: 30px;line-height: 30px;color: white;">提示</p>
+      <div id="textchange">
+        
+      </div>
+
+    </div>
+   
+  </body>
+  <script type="text/javascript" src="./js/pagination.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
+  <script
+    type="text/javascript"
+    src="js/jquery.banner.revolution.min.js"
+  ></script>
+  <script src="../jgw/js/infor_detail.js"></script>
+  <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+  <script type="text/javascript" src="js/portfolio-masonry-4col.js"></script>
+  <script type="text/javascript" src="js/banner.js"></script>
+  <script src="../jgw/js/tablesMergeCell.js"></script>
+  <!--向上滚动-->
+  <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript">
+    jQuery(".txtMarquee-top").slide({
+      mainCell: ".bd ul",
+      autoPlay: true,
+      effect: "topMarquee",
+      vis: 8,
+      interTime: 50
+    });
+  </script>
+  <script>
+    $(function() {
+      $(".news-tab li").click(function() {
+        $(this)
+          .siblings()
+          .removeClass("current");
+        $(this).addClass("current");
+        $(".news-container li").removeClass("one-li");
+        $(".news-container li")
+          .eq($(this).index())
+          .addClass("one-li");
+      });
+    });
+  </script>
+  <script>
+    $(function() {
+      $(".chaxun-index").hover(
+        function() {
+          $(this)
+            .children("div")
+            .show();
+        },
+        function() {
+          $(this)
+            .children("div")
+            .hide();
+        }
+      );
+    });
+  </script>
+  <script>
+    //右侧返回顶部图标
+    $(function() {
+      var icon =
+        '<a class="gotoptop_icon" id="gotoptop_icon" href="#" title="返回顶部"></a>';
+      $("body").append(icon);
+      var $window = $(window);
+      var $gotoptop_icon = $("#gotoptop_icon");
+      var $body = window.opera
+        ? document.compatMode == "CSS1Compat"
+          ? $("html")
+          : $("body")
+        : $("html,body"); // opera fix
+      $(window).bind("scroll resize", function() {
+        if ($window.scrollTop() > 0) {
+          $gotoptop_icon.show();
+        } else {
+          $gotoptop_icon.hide();
+        }
+      });
+      $gotoptop_icon.bind("click", function() {
+        $body.animate({ scrollTop: "0px" }, "fast");
+        return false;
+      });
+      $('#process-demo-2').tablesMergeCell({
+            automatic: false,
+            // rows: [[3,4,5],[6,7]],
+            // cols: [0,3]
+            
+
+        });
+
+    });
+  </script>
+  <script>
+    
+    
+  </script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- figure元素及figcaption元素 figure元素是组合元素 带有可选标题 网页上独立的元素 移除对网页没有太大影响 所表示的内容可以是图片地图 代码实例figcaption元素表示figure元素的标题 从属于figure元素 必须写在figure的内部 一个figure最多只能放一个figcaption-->
+    <figure>
+      <img src="" alt="">
+      <img src="" alt="">
+      <figcaption>book</figcaption>
+    </figure>
+    <!-- details元素和summary元素 -->
+    <!-- details用于标识该元素内部的子元素可以被展开收缩显示的元素 是布尔类型 true时内部子元素被展开显示  false收缩 默认为false 文字表单插件统计图的详细数据等-->
+    <!-- summary元素从属于detail元素 鼠标点击summary元素中的内容时 detail元素中的所以从属元素会被展开或者收缩 如果detail元素没有summary元素浏览器会提供默认元素以供单击-->
+    <details id="detail" onclick="detail_onclick(this)">
+      <summary>word</summary>
+      <p id="p" style="visibility: hidden"> hello</p>
+
+    </details>
+    <!-- mark突出显示 高亮显示  -->
+    <p>测试<mark>Mark</mark>元素</p>
+    <!-- ol -->
+    <ol start="3" reversed>
+      <li>列表1</li>
+      <li>列表2</li>
+      <li>列表3</li>
+    </ol>
+    <!-- dl -->
+    <dl>
+      <dt>hello</dt>
+      <dd>nihao jiushihello</dd>
+      <dt>boke</dt>
+      <dd>do you like boke?</dd>
+    </dl>
+    <!-- cite 表示作品引用 -->
+    <title>cite元素</title>
+    <h3>我最喜欢的电影是<cite>霸王别姬</cite></h3>
+    <!-- small元素 免费声明 法律规范等小字-->
+    <!-- progress元素 任务完成进度  从0-100的数字 最大值最小值 value表示当前完成的量-->
+    <section>
+      <p>完成百分比<progress id="progress" max="100" style="background: #269abc"><span>0</span>%</progress></p>
+      <input type="button" onclick="btn()" value="点击">
+    </section>
+    <!-- meter规定范围内的数值量 磁盘空间或投票 最大值 最小值 value 上限 下限 最佳值-->
+    <meter value="40" min="0" max="100" low="30" high="90" optimum="50">
+    </meter>
+
+
+
+     
+    <script>
+      function btn(){
+        var i = 0;
+        function one(){
+          if(i<=100){
+            i++;
+            updateprogress(i)
+          }
+        }
+        setInterval(one,100)
+
+      }
+      function updateprogress(newValue){
+        var progress_bar = document.getElementById("progress");
+        progress_bar.value = newValue;
+        progress_bar.getElementsByTagName("span")[0].textContent = newValue;
+      }
+
+
+
+      function detail_onclick(detail){
+        var p = document.getElementById("p");
+        if(detail.open){
+          p.style.visibility = "hidden";
+        }else{
+          p.style.visibility = "visible";
+
+        }
+
+      }
+
+      
+    </script>
+  </body>
+</html>

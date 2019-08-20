@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>建工网</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/tf.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="./css/project_infor.css" />
+    <link rel="stylesheet" href="../jgw/css/frendlylink.css">
+    <link rel="stylesheet" href="./css/pagination.css" />
+    <link rel="stylesheet" href="../jgw/css/wangEditor.min.css">
+    <style>
+    .w-e-toolbar .w-e-menu,p{
+      font-size: 15px;
+    }
+    form{
+      font-size: 13px;
+    }
+    form div{
+      margin: 20px 0;
+    }
+    form input{
+      height: 30px;
+      padding-left: 9px;
+    }
+    select{
+      height: 30px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- 顶部 -->
+    <nav class="navbar navbar-inverse site-navbar">
+      <!-- 顶部第一栏 -->
+      <div class="yem-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-xs-4">
+              欢迎来到建工网
+              <button class="log">登陆</button>
+              <button class="log">注册</button>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              服务热线：123456789
+            </div>
+            <div class="col-md-5 col-xs-5 telephone">
+              <a href="">我的收藏</a>&nbsp;&nbsp;
+              <a href="">客户服务</a>&nbsp;&nbsp;
+              <a href="">网站导航</a>&nbsp;&nbsp;
+              <a href="">发布信息</a>&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- logo图第二栏 -->
+      <div class="top-logo">
+        <div class="container">
+          <div class="row">
+            <div class="pull-left col-md-2 col-xs-2">
+              <div style="height:80px">
+                <!--<h1 style="">logo图</h1>-->
+                <img
+                  src="images/logo/logo2.png"
+                  class="logo-index"
+                  width="150px"
+                  height="60px"
+                  style="margin-top: 10px"
+                />
+              </div>
+            </div>
+            <div class="search col-md-6 col-xs-6">
+              <div class="search_cont col-md-5">
+                <select name="information" id="infor">
+                  <option value="">信息类别</option>
+                  <!--  <option value="">信息类别</option>-->
+                </select>
+                <select name="location" id="region">
+                    <option value="">地区</option>
+
+                  <!-- <option value="">地区</option>-->
+                </select>
+              </div>
+              <div class="searcharea col-md-7" >
+                <div class="">
+                  <div class=" bar6 col-md-12">
+                    <form >
+                      <input type="text" style="height: 40px;" placeholder="请输入您要搜索的内容..." />
+                      <button type="submit" style="height: 40px;"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pull-right col-md-3 col-xs-3" style="margin-top:20px">
+              <p>咨询热线：138-6130-3238</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="about-nav-py">
+        <div class="container">
+          <div class="navbar-header">
+            <img src="images/logo.png" class="meblie-logo" />
+            <button
+              type="button"
+              class="navbar-toggle collapsed jicheng"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav nav-top-quanju">
+                        <li>
+                          <a href="index.html" class="active-daohang">首页</a>
+                        </li>
+                        <li>
+                          <a href="./project_inforomation.html">工程信息</a>
+                        </li>
+                        <li class="">
+                          <a
+                            href="../jgw/bidding_information.html"
+                            
+                            >招标信息</span
+                          ></a>
+                          
+                        </li>
+                        <li>
+                          <a href="../jgw/win_bidding.html">中标信息</a>
+                        </li>
+                        <li>
+                          <a href="../jgw/purchase.html">采购信息</a>
+                        </li>
+                        <li>
+                          <a href="../jgw/database.html">数据库</a>
+                        </li>
+                        <li>
+                          <a href="../jgw/land_market.html">土地交易</a>
+                        </li>
+                        <li>
+                          <a href="../jgw/meeting.html">会议信息</a>
+                        </li>
+                      </ul>
+              </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+    <!-- 顶部结束 -->
+    <!-- 当前位置 -->
+    <div style="width: 77.5%;margin:5px auto">
+      当前位置：<a href="../jgw/index.html">首页</a>/<a href="../jgw/postmessage.html">发布信息</a>
+    </div>
+    <!-- 当前位置结束 -->
+    <!-- 字段 标题 地区 发布人等 -->
+    <div style="width:80%;margin:10px auto;" class="text-center">
+      <form action="">
+          <div>
+              <label for="">标题:</label>
+              <input type="text" placeholder="请输入标题" style="width:50%;">
+           </div>
+           <div>
+              
+                <span>
+                  <label for="">发布人:</label>
+                  <input type="text" placeholder="请输入标题">
+                </span>
+                <span style="margin: 0 40px;">
+                  <label for="">电话:</label>
+                  <input type="text" placeholder="请输入电话" id="phonenumber" onblur="checkphone()">
+                </span>
+                <span>
+                    <label for="">地区:</label>
+                    <select name="" id="region2">
+                      <option value="">请选择地区</option>
+                      <option value="">陕西省</option>
+                    </select>
+                  </span>
+      
+           </div>
+           <div>
+             <small class="ck_phone"></small>
+           </div>
+
+      </form>
+    
+      
+      
+      
+    </div>
+    <!-- 字段 标题 地区 发布人等结束 -->
+
+    <!-- 富文本编辑器 -->
+    <div id="editor" style="width:60%;margin:10px auto;">
+       <p> <b></b> </p>
+    </div>
+  
+    <!-- 富文本编辑器结束 -->
+    <!-- 提交按钮 -->
+    <div style="width:80%;margin:10px auto;" class="text-center">
+        <button style="margin: 20px auto;width: 100px;height: 35px;    background-color: #1D8CE0;color: white;font-size: 13px;" >提交</button>
+
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <a href="">关于我们</a> <span>-</span> <a href="">加入我们</a>
+            <span>-</span> <a href="">联系我们</a> <span>-</span>
+            <a href="">会员服务</a> <span>-</span> <a href="">业务合作</a>
+            <span>-</span> <a href="">在线联系</a> <span>-</span>
+            <a href="">友情链接</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            北京顺立建设咨询公司&nbsp;&nbsp;Copyright © 2014-2019
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <a href="">电话：1234567890</a>&nbsp;&nbsp;
+            <a href="">传真：1234567890</a>&nbsp;&nbsp;
+            <a href="">邮箱：1234567890qq.com</a>&nbsp;&nbsp;
+            <a href="">QQ：1234567890</a>&nbsp;&nbsp;
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <a href="">地址：北京顺立建设咨询公司</a>&nbsp;&nbsp;
+            <a href="">ICP备1234567890号</a>&nbsp;&nbsp;
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-bottom">
+            <span
+              style="display:inline-block;width:100px;height:100px;background:white;color: black"
+              >二维码</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部结束 -->
+    <!-- 底部固定栏 -->
+    <!-- <div style="width:
+    100px;height:130px;background:white;border-radius: 10px;position: fixed;bottom: 5px;right: 10%;border:1px solid  grey;">
+      <div style="font-size:15px;text-align:center;margin-top: 10px;color:#0066cc">
+        咨询中心
+      </div>
+      <div style="margin:10px 5px">
+        <img src="./images/phone.png" alt="" style="height:30px;width:28px">12345678
+      </div>
+      <div style="margin:10px 5px">
+          <img src="./images/consult.png" alt="" style="height:32px;width:30px">在线咨询
+        </div>
+    </div>-->
+  </body>
+  <!-- <script type="text/javascript" src="./js/pagination.js"></script> -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
+  <script
+    type="text/javascript"
+    src="js/jquery.banner.revolution.min.js"
+  ></script>
+  <script src="../jgw/js/postmessage.js"></script>
+  <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+  <script type="text/javascript" src="js/portfolio-masonry-4col.js"></script>
+  <!-- <script type="text/javascript" src="js/banner.js"></script> -->
+  <!--向上滚动-->
+  <!-- <script src="js/jquery.SuperSlide.2.1.1.js"></script> -->
+  <script src="../jgw/js/ip.js"></script>
+  <script src="../jgw/js/wangEditor.js"></script>
+  <!-- <script type="text/javascript" src='https://unpkg.com/wangeditor/release/wangEditor.min.js'></script> -->
+  <!-- <script src="../jgw/js/wangEditor.min.js"></script> -->
+  <script type="text/javascript">
+    var E = window.wangEditor
+        var editor = new E('#editor')
+        // 或者 var editor = new E( document.getElementById('editor') )
+        // 上传图片到服务器
+
+  
+        //editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+        editor.customConfig.uploadImgServer = baseurl+'/file/upload'
+        editor.create()
+        
+  </script>
+  <script>
+    //右侧返回顶部图标
+    $(function() {
+      var icon =
+        '<a class="gotoptop_icon" id="gotoptop_icon" href="#" title="返回顶部"></a>';
+      $("body").append(icon);
+      var $window = $(window);
+      var $gotoptop_icon = $("#gotoptop_icon");
+      var $body = window.opera
+        ? document.compatMode == "CSS1Compat"
+          ? $("html")
+          : $("body")
+        : $("html,body"); // opera fix
+      $(window).bind("scroll resize", function() {
+        if ($window.scrollTop() > 0) {
+          $gotoptop_icon.show();
+        } else {
+          $gotoptop_icon.hide();
+        }
+      });
+      $gotoptop_icon.bind("click", function() {
+        $body.animate({ scrollTop: "0px" }, "fast");
+        return false;
+      });
+    });
+  </script>
+  
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../jgw/css/liMarquee.css">
+    <title>Document</title>
+    <style></style>
+    <script src="../jgw/js/jquery.min.js"></script>
+    <!-- <script src="../jgw/js/jquery-1.8.3.min.js"></script> -->
+    <script src="../jgw/js/jquery.liMarquee.js"></script>
+    <style>
+    #demo {
+background: #FFF;
+overflow:hidden;
+border: 1px dashed #CCC;
+width: 500px;
+}
+#demo img {
+border: 3px solid #F2F2F2;
+}
+#indemo {
+float: left;
+width: 800%;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
+}</style>
+  </head>
+  <body>
+        <div id="demo">
+                <div id="indemo">
+                <div id="demo1">
+                <a href="#"><img src="http://www.cnrui.cn/other/link/Clear_logo.gif" border="0" /></a>
+                <a href="#"><img src="http://www.cnrui.cn/other/link/Clear_logo.gif" border="0" /></a>
+                <a href="#"><img src="http://www.cnrui.cn/other/link/Clear_logo.gif" border="0" /></a>
+                <a href="#"><img src="http://www.cnrui.cn/other/link/Clear_logo.gif" border="0" /></a>
+                <a href="#"><img src="http://www.cnrui.cn/other/link/Clear_logo.gif" border="0" /></a>
+                <a href="#"><img src="http://www.cnrui.cn/other/link/Clear_logo.gif" border="0" /></a>
+                </div>
+                <div id="demo2"></div>
+                </div>
+                </div>
+  </body>
+  <script>
+      var speed=30; //数字越大速度越慢
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.οnmοuseοver=function() {clearInterval(MyMar)};
+tab.οnmοuseοut=function() {MyMar=setInterval(Marquee,speed)};
+  </script>
+</html>

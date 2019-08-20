@@ -65,7 +65,8 @@ function getData(id) {
           }','${data.data.name}','${
           data.data.id
         }')" id="collectproject"      
-        >${collectiontype}</button> 
+        >${collectiontype}</button>
+        <button class="back_btn">下载工程</button>
         <button class="back_btn" onclick="onprint()" id="onprint">打印工程</button>
     </div>
 </div>

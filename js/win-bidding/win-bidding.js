@@ -149,7 +149,7 @@ $.getJSON(baseurl + "/index/region", function (data) {
  */
 $.getJSON(baseurl + "/index/region", function (data) {
     $("#region").html("<option value=''>地区</option>");
-    $("#bidding-region").html("<option value=''>中标地区查询</option>");
+    $("#bidding-region").html("<option value=''>招标地区查询</option>");
     for (var i = 0; i < data.data.length; i++) {
         $("#region").append(
             "<option value='" +
@@ -196,8 +196,7 @@ function biddingSearch() {
             tenderingInfoType: type,
             industry: industry,
             pageNum: pageNum,
-            pageSize: pageSize,
-            type:2
+            pageSize: pageSize
         },
         function (res) {
             render("", res.data, res.totalCount, 0);

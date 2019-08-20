@@ -2,7 +2,7 @@
     // 地区
 var region = "",
     // 信息类别
-    folderType = 8,
+    folderType = 5,
     // 标题
     title = "",
     pageNum = 0,
@@ -74,7 +74,7 @@ function renderCollect(element, data, total, index) {
             data[i].id +
             ">" +
             "<td><input type='checkbox' name='checkItem'></td>" +
-            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../../metting-detail.html?id=" + data[i].infoId + " '> " +
+            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../../database_detail.html?id=" + data[i].infoId + " '> " +
             data[i].title +
             "</a></td>" +
             "<td style=''>" +

@@ -143,9 +143,7 @@
 <!-- 顶部结束 -->
 <!-- 当前位置 -->
 <div style="width: 77.5%;margin:5px auto">
-    当前位置：<a href="index.html">首页</a> &nbsp;/&nbsp;
-    <a href="meeting.html">会议信息</a> &nbsp;/&nbsp;
-    <a href="">会议信息详情</a>
+    当前位置：
 </div>
 <!-- 当前位置结束 -->
 <!-- 中间内容 -->
@@ -219,33 +217,27 @@
                 </div>
             </div>
             <!-- 用户登陆结束 -->
-
             <div class="pro_stage col-md-12" style="padding: 0">
                 <div  class="title">会议类别</div>
                 <div>
                     <ul>
-                        <li><a href="#" onclick="leftsearch('会议通知')">会议通知</a></li>
-                        <li><a href="#" onclick="leftsearch('论坛展览')">论坛展览</a></li>
+                        <li><a href="#" onclick="leftsearch(1,'中标公示')">会议通知</a></li>
+                        <li><a href="#" onclick="leftsearch(1,'中标公告')">论坛展览</a></li>
                     </ul>
                 </div>
             </div>
 
-            <a href="html/metting/collection.html" style="color:#fff">
-                <div class="pro_stage col-md-12" style="padding: 0 ;margin:3px 0">
-                    <div class="title">
-                        我的收藏
-                    </div>
+
+            <div class="pro_stage col-md-12" style="padding: 0">
+                <div class="title">
+                    会议收藏
                 </div>
-            </a>
-            <!-- 我的收藏结束 -->
-            <!-- 我的浏览历史 -->
-            <a href="html/metting/history.html" style="color:#fff">
-                <div class="pro_stage col-md-12" style="padding: 0 ;margin:3px 0">
-                    <div class="title">
-                        浏览历史
-                    </div>
+            </div>
+            <div class="pro_stage col-md-12" style="padding: 0">
+                <div class="title">
+                    浏览历史
                 </div>
-            </a>
+            </div>
             <!-- 热门信息列表结束 -->
         </div>
         <!-- 左侧内容结束 -->
@@ -259,13 +251,156 @@
             <!-- 信息详情的标题 -->
             <div style="height: 20px"></div>
             <div class="title" style="margin: 15px 0;">
+                <!-- <div class="row" style="margin: 15px 0">
+                  <div class="col-md-12 text-center" style="font-size: 25px">
+                    云南省烟草烟叶公司2019年打包带采购项目
+                  </div>
+                </div> -->
 
+                <!-- <div class="row" style="margin: 8px 0">
+                  <div class="col-md-12 text-center">
+                    发布者：<span>admin</span> 发布时间：<span>2019-09-09</span>
+                    所属地区：<span><a href="">北京</a></span> 点击次数：<span
+                      >33</span
+                    >
+                  </div>
+                </div> -->
+                <!-- <div class="row" style="margin: 8px 0">
+                  <div class="col-md-12 text-center">
+                    <button class="back_btn">收藏工程</button>
+                    <button class="back_btn">下载工程</button>
+                    <button class="back_btn ">打印工程</button>
+                  </div>
+                </div> -->
             </div>
             <div style="height: 15px"></div>
             <!-- 信息详情的标题结束 -->
             <!-- 正文 -->
             <div id="projctinfo-content">
+                <!--  <div class="title" style="margin: 15px 0;">
+                      <div class="row" style="margin: 15px 0">
+                          <div class="col-md-12 text-center" style="font-size: 25px">
+                              云南省烟草烟叶公司2019年打包带采购项目
+                          </div>
+                      </div>
 
+                      <div class="row" style="margin: 8px 0">
+                          <div class="col-md-12 text-center">
+                              发布者：<span>admin</span> 发布时间：<span>2019-09-09</span>
+                              所属地区：<span><a href="">北京</a></span> 点击次数：<span
+                          >33</span
+                          >
+                          </div>
+                      </div>
+                      <div class="row" style="margin: 8px 0">
+                          <div class="col-md-12 text-center">
+                              <button class="back_btn">收藏工程</button>
+                              <button class="back_btn">下载工程</button>
+                              <button class="back_btn ">打印工程</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div style="height: 15px"></div>
+                  &lt;!&ndash; 信息详情的标题结束 &ndash;&gt;
+                  &lt;!&ndash; 正文 &ndash;&gt;
+                  <div class="main_body" style="height: 77%">
+                      <div class="body_page" style=" overflow-y:scroll; overflow-x:auto;  height:850px;">
+
+                          <table id="process-demo-2" class="tb tb-b c-100 c-t-center" style="margin: 0 auto">
+                              <thead>
+
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <td class="titla_name">标题：</td>
+                                  <td colspan=3 style="text-align: left;padding: 10px 20px;">贵州铜仁市松桃苗人古城旅游基础设施建设项目</td>
+                                  &lt;!&ndash; <td>11111</td>
+                                  <td>22222</td>
+                                  <td>SuZhouCity</td> &ndash;&gt;
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">是否优质</td>
+                                  <td style="width: 200px">否</td>
+                                  <td class="titla_name">地区</td>
+                                  <td>贵州省铜仁市</td>
+                              </tr>
+                              <tr>
+
+                                  <td class="titla_name">占地面积</td>
+                                  <td>&#45;&#45;</td>
+                                  <td class="titla_name">建筑面积</td>
+                                  <td>&#45;&#45;</td>
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">工程类别</td>
+                                  <td>照明/排水/管网/其他市政设施</td>
+                                  <td class="titla_name">工程造价</td>
+                                  <td>&#45;&#45;</td>
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">项目类型</td>
+                                  <td>uuuuu</td>
+                                  <td class="titla_name">hhhhh</td>
+                                  <td>ShangHaiCity</td>
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">开工日期</td>
+                                  <td>&#45;&#45;</td>
+                                  <td class="titla_name">结束日期</td>
+                                  <td>&#45;&#45;</td>
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">发布时间</td>
+                                  <td>&#45;&#45;</td>
+                                  <td>更新时间</td>
+                                  <td class="titla_name">&#45;&#45;</td>
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">承建商</td>
+                                  <td>&#45;&#45;</td>
+                                  <td>设计师</td>
+                                  <td class="titla_name">&#45;&#45;</td>
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">工程地址</td>
+                                  <td colspan=3>&#45;&#45;</td>
+
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">工程概况</td>
+                                  <td colspan=3>
+                                      <p style="word-wrap: break-word;
+                word-break: break-all;
+                overflow: hidden;text-align: left;padding: 10px 20px;">
+                                          项目为旅游基础设施，包含：◆水系管网工程，市政给排水工程，市政电气工程◆市政道路工程，小区道路工程，浆砌片石挡墙◆悬臂式挡墙，扶壁式路肩挡墙，钢筋混凝土挡墙◆室外给排水工程，强弱电工程，污水处理系统◆AB区安防，CD区安防工程\r\n项目为旅游基础设施，包含：◆水系管网工程，市政给排水工程，市政电气工程◆市政道路工程，小区道路工程，浆砌片石挡墙◆悬臂式挡墙，扶壁式路肩挡墙，钢筋混凝土挡墙◆室外给排水工程，强弱电工程，污水处理系统◆AB区安防，CD区安防工程\r\n</p>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">跟进记录</td>
+                                  <td colspan=3>
+                                      <p style="word-wrap: break-word;
+                word-break: break-all;
+                overflow: hidden;text-align: left;padding: 10px 20px;">
+                                          2019/7/11：2019-07中旬项目在施工中标公示，第一中标候选单位：贵州贵星禹建设工程有限公司。\r\n2019/6/14：2019-06中旬项目在施工招标，投标文件递交的截止时间为2019年07月10日。</p>
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td class="titla_name">甲方</td>
+                                  <td colspan=3>
+                                      <p style="word-wrap: break-word;
+                word-break: break-all;
+                overflow: hidden;text-align: left;padding: 10px 20px;">甲方 -
+                                          发展商\r\n贵州松桃永昌投资开发有限公司(贵州省-铜仁市-松桃苗族自治县)\r\n联系人：龙松 手机：15185893876
+                                          地址：贵州省铜仁市松桃苗族自治县贵州松桃经济开发区企业服务中心13楼\r\n\r\n</p>
+                                  </td>
+
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>-->
             </div>
             <!-- 正文结束 -->
             <!-- 正文底部 -->
@@ -275,6 +410,8 @@
                         <button class="back_btn">
                             <a href="../jgw/index.html">返回首页</a>
                         </button>
+                        <button class="back_btn">收藏工程</button>
+                        <button class="back_btn">下载工程</button>
                         <button class="back_btn">打印工程</button>
                         <button class="back_btn">
                             <a href="">返回顶部</a>
@@ -396,20 +533,37 @@
         </div>
     </div>
 </div>
+<!-- 底部结束 -->
+<!-- 底部固定栏 -->
+<!-- <div style="width:
+100px;height:130px;background:white;border-radius: 10px;position: fixed;bottom: 5px;right: 10%;border:1px solid  grey;">
+  <div style="font-size:15px;text-align:center;margin-top: 10px;color:#0066cc">
+    咨询中心
+  </div>
+  <div style="margin:10px 5px">
+    <img src="./images/phone.png" alt="" style="height:30px;width:28px">12345678
+  </div>
+  <div style="margin:10px 5px">
+      <img src="./images/consult.png" alt="" style="height:32px;width:30px">在线咨询
+    </div>
+</div>-->
 </body>
 <script type="text/javascript" src="./js/pagination.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
 <script
         type="text/javascript"
         src="js/jquery.banner.revolution.min.js"
 ></script>
+<script src="../jgw/js/infor_detail.js"></script>
 <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
 <script type="text/javascript" src="js/portfolio-masonry-4col.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
 <script src="../jgw/js/tablesMergeCell.js"></script>
 <!--向上滚动-->
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="./js/index.js"></script>
 <script type="text/javascript">
     jQuery(".txtMarquee-top").slide({
         mainCell: ".bd ul",

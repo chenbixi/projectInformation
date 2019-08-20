@@ -205,7 +205,8 @@ function biddingSearch() {
             tenderingInfoType: type,
             industry: industry,
             pageNum: pageNum,
-            pageSize: pageSize
+            pageSize: pageSize,
+            type:1
         },
         function (res) {
             render("", res.data, res.totalCount, 0);

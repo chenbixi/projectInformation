@@ -206,12 +206,12 @@ function render(element, data, total, index) {
       data[i].id +
       ">" +
       "<td><input type='checkbox' name='checkItem'></td>" +
-/*      "<td style='width:40%'><a  target='_blank' href='../jgw/perchase_detail.html?id=" +
+/*      "<td style='width:40%'><a  target='_blank' href='../perchase_detail.html?id=" +
       data[i].id +
       " ' style='display: inline-block;width: 90%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;'> " +
       data[i].title +
       "</a></td>" +*/
-        "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../jgw/perchase_detail.html?id="+data[i].id +" '> " +
+        "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../perchase_detail.html?id="+data[i].id +" '> " +
         data[i].title +
         "</a></td>" +
       "<td>" +

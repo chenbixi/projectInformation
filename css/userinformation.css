@@ -2,14 +2,7 @@ table
 {
 border-collapse:separate;
 border-spacing:10px 5px;
-width: 100%;
-padding: 20px 50px;
 }
 tr{
     font-size: 14px;
-   
-}
-input{
-    margin: 5px 0;
-    padding-left:10px; 
 }

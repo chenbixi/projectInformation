@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <title>用户信息</title>
+    <title>建工网</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
@@ -155,31 +155,33 @@
 
         <!-- 个人信息部分 -->
         <div
-          class="col-md-12"
+          class="col-md-12 text-center"
           style="border: 1px solid grey;padding: 0;margin-left: 10px;"
         >
         <!-- 个人信息 -->
         <form action="" id="">
-           
+            <h1>个人中心</h1>
+            <p>请完善个人信息</p>
               <form>
-                <!-- 第一个表单 -->
-                <table width="" align="" >
-                  <div style="height: 30px;background:#1D8CE0;color: white;line-height: 30px;font-size: 15px;padding-left: 20px;">我的基本资料</div>
+                <table width="500px" align="center" style="margin: 0 auto;">
+                  
                   <tr>
-                      <td>
-                          <label for="">用户名：</label>
-                          <input
-                            type="text"
-                            name="username"
-                            size="25"
-                            maxlength="6"
-                            disabled
-                            style="height: 35px;width:75%;"
-                           
-                          />
-                        </td>
-                    <td>
-                      <label for="">昵&nbsp;&nbsp;&nbsp;称：</label>
+                    <td align="right">用户名：</td>
+                    <td align="left">
+                      <input
+                        type="text"
+                        name="username"
+                        size="25"
+                        maxlength="6"
+                        placeholder="请输入用户名"
+                        style="height: 35px;width:75%;"
+                       
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right">昵称：</td>
+                    <td align="left">
                       <input
                         type="text"
                         name="username"
@@ -189,11 +191,10 @@
                         style="height: 35px;width:75%;"
                       />
                     </td>
-                   
                   </tr>
                   <tr>
-                    <td>
-                      <label for="">姓&nbsp;&nbsp;&nbsp;名：</label>
+                    <td align="right">姓名：</td>
+                    <td align="left">
                       <input
                         type="text"
                         name="username"
@@ -203,125 +204,120 @@
                         style="height: 35px;width:75%;"
                       />
                     </td>
-                    <td>
-                      <label for="">性&nbsp;&nbsp;&nbsp;别：</label>
-                      男 <input type="radio" name="sex" value="man" checked/> 女
-                      <input type="radio" name="sex" value="woman" /> 
+                  </tr>
+                  <tr>
+                    <td align="right">性别：</td>
+                    <td align="left">
+                      男 <input type="radio" name="sex" value="man" /> 女
+                      <input type="radio" name="sex" value="woman" /> 保密
+                      <input type="radio" name="sex" value="bm" checked />
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <label for="">职&nbsp;&nbsp;&nbsp;务：</label>
-                      <input type="text" name="email" size="25" style="height: 35px;width:75%;"/>
+                    <td align="right">职务：</td>
+                    <td align="left">
+                      <input type="text" name="email" size="25" style="height: 35px;width:75%;" value="@163.com" />
                     </td>
-                    <td>
-                      <label for="">公司名称:</label>
+                  </tr>
+                  <tr>
+                    <td align="right">公司名称：</td>
+                    <td align="left">
                       <input
                         type="password"
                         name="paw"
                         size="25"
                         maxlength="6"
-                        placeholder="请输入公司名称"
+                        placeholder="请输入密码"
                         style="height: 35px;width:75%;"
                       />
-
-                      
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <label for="">办公地址:</label>
+                    <td align="right">工作地：</td>
+                    <td align="left">
                       <select name="" id="">
-                          <option value="">陕西省</option>
-                        </select>
-                        <select name="" id="">
-                          <option value="">西安市</option>
-                        </select>
-
-                    </td>
-                    <td>
-                      <label for="">籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯:</label>
-      
-                          <select name="" id="">
-                            <option value="">陕西省</option>
-                          </select>
-                          <select name="" id="">
-                            <option value="">西安市</option>
-                          </select>
-                        
+                        <option value="">陕西省</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">西安市</option>
+                      </select>
                     </td>
                   </tr>
-                <table/>
-                <!-- 第三个表单 -->
-                <table>
-                  <div style="height: 30px;background:#1D8CE0;color: white;line-height: 30px;font-size: 15px;padding-left: 20px;">我的联系方式</div>
                   <tr>
-                    <td>
-                      <label for="">邮箱:</label>
-                      <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
-                    </td>
-                    <td>
-                      <label for="">手机:</label>
-                      <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
+                    <td align="right">籍贯：</td>
+                    <td align="left">
+                      <select name="" id="">
+                        <option value="">陕西省</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">西安市</option>
+                      </select>
                     </td>
                   </tr>
-                 
                   <tr>
-                    <td>
-                      <label for="">电话:</label>
-                      <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>                  
-                    </td>
-                    <td>
-                      <label for="">传真</label>
+                    <td align="right">邮箱：</td>
+                    <td align="left">
                       <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <label for="">微信:</label>
+                    <td align="right">手机：</td>
+                    <td align="left">
                       <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
                     </td>
-                    <td>
-                        <label for="">QQ:</label>
-                        <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
-                     
+                  </tr>
+                  <tr>
+                    <td align="right">电话：</td>
+                    <td align="left">
+                      <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
                     </td>
                   </tr>
-
-                </table>
+                  <tr>
+                    <td align="right">传真：</td>
+                    <td align="left">
+                      <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right">微信：</td>
+                    <td align="left">
+                      <input type="text" name="email" size="25" value="@163.com" style="height: 35px;width:75%;"/>
+                    </td>
+                  </tr>
                   <!-- <tr>
                     <td align="right">上传照片：</td>
                     <td align="left"><input type="file" name="file" /></td>
                   </tr> -->
-                <!-- 第三个表格 -->
-                <table>
-                    <div style="height: 30px;background:#1D8CE0;color: white;line-height: 30px;font-size: 15px;padding-left: 20px;">请填写以下信息有利于你的业务合作</div>
+                  
+    
                   <tr>
-                    <td>
-                      <label for="">经营产品:</label>
-                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>                  
-                    </td>
-                    <td>
-                      <label for="">产品品牌:</label>
-                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>          
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label for="">业务区域:</label>
-                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>    
-                    </td>
-                    <td>
-                      <label for="">经营模式:</label>
-                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>
-                     
-                    </td>
-                  </tr>
-                 
-                  <tr style="width: 100%">
-                    
+                    <td align="right">经营产品：</td>
                     <td align="left">
-                      <label for="">业务简介：</label>
+                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right">产品品牌：</td>
+                    <td align="left">
+                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right">业务区域：</td>
+                    <td align="left">
+                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right">经营模式：</td>
+                    <td align="left">
+                      <input type="text" name="" size="" value="" style="height: 35px;width:75%;"/>
+                    </td>
+                  </tr>
+    
+                  <tr>
+                    <td align="right">业务简介：</td>
+                    <td align="left">
                       <textarea
                         name="jj"
                         rows="6"
@@ -332,9 +328,8 @@
                     </td>
                   </tr>
                   <tr>
-                    
+                    <td align="right">案例介绍：</td>
                     <td align="left">
-                      <label for="">案例介绍：</label>
                       <textarea
                         name="jj"
                         rows="6"
@@ -368,7 +363,9 @@
                     <td></td>
                   </tr>
                 </table>
-               
+                <table width="600px" align="center">
+                  
+                </table>
               </form>
 
         

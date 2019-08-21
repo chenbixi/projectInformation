@@ -96,7 +96,7 @@ function closemore(){
 }
 // 点击头像出现个人中心
 function personcenter(){
-    window.location.href="../JGW/userinformation.html"
+
 }
 /**
  * 轮播图
@@ -364,10 +364,10 @@ $.post(baseurl+"/index/projectinfo/show",{"pageNum":1,"pageSize":10},function(da
     if(data.code === 0){
         // console.log(data)
         var list = data.rows
-        //href='../jgw/infor_detail.html?id="+ data.data[i].id+" '
+       
         for (let i = 0,l= list.length; i < l; i++) {
             html+= `<li>
-                        <a href='../jgw/infor_detail.html?id=${list[i].id}' id='name'>${list[i].name}</a>
+                      
                         <span class="pull-right" id="date">${list[i].date}</span>
                     </li>`
         }

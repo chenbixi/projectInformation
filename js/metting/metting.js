@@ -78,7 +78,7 @@ function render(element, data, total, index) {
             data[i].id +
             ">" +
             "<td><input type='checkbox' name='checkItem'></td>" +
-            "<td style='width:40%'><a  target='_blank' href='../jgw/metting-detail.html?id=" +
+           
             data[i].id +
             " ' style='display: inline-block;width: 90%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;'> " +
             data[i].title +

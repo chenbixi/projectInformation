@@ -83,7 +83,6 @@ $(function() {
       pageSize: pageSize,
     },
     function(res) {
-      console.log("ready", res);
       render("", res.data, res.totalCount, 0);
     }
   );
@@ -182,9 +181,6 @@ function getdata(opt, callback) {
     data: opt,
     dataType: "json",
     success: function(res) {
-        console.log("采购",res);
-
-      console.log("采购dx",opt);
       callback && callback(res);
     }
   });
@@ -211,7 +207,7 @@ function render(element, data, total, index) {
       " ' style='display: inline-block;width: 90%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;'> " +
       data[i].title +
       "</a></td>" +*/
-        "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../perchase_detail.html?id="+data[i].id +" '> " +
+        "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='perchase_detail.html?id="+data[i].id +" '> " +
         data[i].title +
         "</a></td>" +
       "<td>" +
@@ -253,8 +249,7 @@ function left_click(type, name) {
 }
 //点击变背景颜色
 window.onload = function(){
-  var lis1 = $('#type1 li')
-  console.log(lis1)
+  var lis1 = $('#type1 li') 
   var len = lis1.length;
   for(var i=0;i<len;i++){
       lis1[i].onclick = function(){
@@ -265,7 +260,6 @@ window.onload = function(){
       };
   }
   var lis2 = $('#type2 li')
-  console.log(lis2)
   var en = lis2.length;
   for(var i=0;i<en;i++){
       lis2[i].onclick = function(){

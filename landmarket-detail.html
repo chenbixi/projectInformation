@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="./css/project_infor.css" />
     <link rel="stylesheet" href="./css/pagination.css" />
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/public_login.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/ip.js"></script>
+    <script src="./js/public_login.js"></script>
 </head>
 
-<body>
+<body onload="getUserInfo()">
 <!-- 顶部 -->
 <nav class="navbar navbar-inverse site-navbar">
     <!-- 顶部第一栏 -->
@@ -113,46 +116,26 @@
                     </li>
                     <li class="">
                         <a
-<<<<<<< HEAD
-                        
-=======
-                                href="../bidding_information.html"
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
+                                href="./bidding_information.html"
 
                         >招标信息</span
                                 ></a>
 
                     </li>
                     <li>
-<<<<<<< HEAD
-                     
+                        <a href="./win_bidding.html">中标信息</a>
                     </li>
                     <li>
-                       
+                        <a href="./purchase.html">采购信息</a>
                     </li>
                     <li>
-                       
+                        <a href="./database.html">数据库</a>
                     </li>
                     <li>
-                       
+                        <a href="./land_market.html" class="active-daohang">土地交易</a>
                     </li>
                     <li>
-                    
-=======
-                        <a href="../win_bidding.html">中标信息</a>
-                    </li>
-                    <li>
-                        <a href="../purchase.html">采购信息</a>
-                    </li>
-                    <li>
-                        <a href="../database.html">数据库</a>
-                    </li>
-                    <li>
-                        <a href="../land_market.html" class="active-daohang">土地交易</a>
-                    </li>
-                    <li>
-                        <a href="../meeting.html">会议信息</a>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
+                        <a href="./meeting.html">会议信息</a>
                     </li>
                 </ul>
             </div>
@@ -163,11 +146,7 @@
 <!-- 顶部结束 -->
 <!-- 当前位置 -->
 <div style="width: 77.5%;margin:5px auto">
-<<<<<<< HEAD
-   
-=======
     当前位置：<a href="../index.html">首页</a> &nbsp;/ &nbsp;
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
     <a href="land_market.html">土地交易</a> &nbsp;/ &nbsp;
     <a href="">土地交易详情</a>
 </div>
@@ -185,7 +164,7 @@
         >
             <!-- 用户登陆 -->
             <div class="land_plan col-md-12 col-xs-12" style="padding: 0">
-                <div>
+                <div id="userlogin">
                     <div class="" style="background: #0066cc">
                         <div
                                 class="word2"
@@ -310,11 +289,7 @@
                 <div class="row" style="margin: 8px 0">
                     <div class="col-md-12 text-center">
                         <button class="back_btn">
-<<<<<<< HEAD
-                      
-=======
                             <a href="../index.html">返回首页</a>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
                         </button>
                         <button class="back_btn">打印工程</button>
                         <button class="back_btn">
@@ -453,7 +428,6 @@
 </div>-->
 </body>
 <script type="text/javascript" src="./js/pagination.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
 <script
@@ -463,11 +437,7 @@
 <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
 <script type="text/javascript" src="js/portfolio-masonry-4col.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
-<<<<<<< HEAD
-
-=======
-<script src="../js/tablesMergeCell.js"></script>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
+<script src="./js/tablesMergeCell.js"></script>
 <!--向上滚动-->
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript">

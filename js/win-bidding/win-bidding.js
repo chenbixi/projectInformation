@@ -14,8 +14,7 @@ $(function () {
             pageNum: pageNum,
             pageSize: pageSize,
         },
-        function (res) {
-            console.log("获取到的数据", res);
+        function (res) {    
             render("", res.data, res.totalCount, 0);
         }
     );

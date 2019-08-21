@@ -247,9 +247,9 @@ function changePasswordStatus() {
   var currentValue = $("#remember").val();
   $("#remember").val(currentValue == "on" ? "off" : "on");
 }
-
 // 登陆
 function login() {
+
   $("#rememberText").val($("#remember").val() == "on" ? "false" : "true");
   console.log($("#rememberText").val());
 
@@ -257,6 +257,7 @@ function login() {
   data.username = $("#user").val();
   data.password = $("#pswd").val();
   data.rememberMe = $("#rememberText").val();
+  console.log(data);
   $.post(baseurl + "/login ", data, function(data) {
     console.log("返回的数据 ", data);
     // code == 500 错误 错误信息展示给用户

@@ -15,8 +15,7 @@ $(function() {
             pageNum: pageNum,
             pageSize: pageSize,
         },
-        function(res) {
-            console.log("获取到的数据", res);
+        function(res) { 
             render("", res.data, res.totalCount, 0);
         }
     );
@@ -55,7 +54,6 @@ function getdata(opt, callback) {
         url: baseurl + "/system/conferenceInformation/list",
         data: opt,
         success: function(res) {
-            console.log("获取到的数据: ",res);
             callback && callback(res);
         }
     });
@@ -78,7 +76,7 @@ function render(element, data, total, index) {
             data[i].id +
             ">" +
             "<td><input type='checkbox' name='checkItem'></td>" +
-            "<td style='width:40%'><a  target='_blank' href='../metting-detail.html?id=" +
+            "<td style='width:40%'><a  target='_blank' href='metting-detail.html?id=" +
             data[i].id +
             " ' style='display: inline-block;width: 90%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;'> " +
             data[i].title +

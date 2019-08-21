@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/tf.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="./css/project_infor.css" />
-    <link rel="stylesheet" href="../css/liMarquee.css">
-    <link rel="stylesheet" href="../css/signin.css">
+    <link rel="stylesheet" href="./css/liMarquee.css">
+    <link rel="stylesheet" href="./css/signin.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="js/ip.js"></script>
   </head>
@@ -150,9 +150,7 @@
     <!-- 轮播信息 -->
     <div id="information_box" class="text-center" style="margin-top: 15px;height: 20px;overflow: hidden;">
         <ul id="information_list1">
-          <li style="margin: 5px 0"><a href="" style="text-decoration:underline;">这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2019-09-09</span> </a></li>
-          <li style="margin: 5px 0"><a href="" style="text-decoration:underline;">这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2019-09-09</span> </a></li>
-          <li style="margin: 5px 0"><a href="" style="text-decoration:underline;">这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看这是一条信息点击查看&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2019-09-09</span> </a></li>
+          
          </ul>
          <ul id="information_list2"></ul>
     </div>      
@@ -287,7 +285,7 @@
       </div>
        <!-- 查看更多 -->
     <div style="display:none;" id="lookmorelist">
-      <div class="text-center" style="margin-top:10px;font-size:18px;">权限中心</div>
+      <!-- <div class="text-center" style="margin-top:10px;font-size:18px;">权限中心</div>
         <table style="margin: 10px auto">
           <tbody>
             <tr>
@@ -324,7 +322,7 @@
                           </tr>
           </tbody>
         </table>
-  
+   -->
       </div>
       <!-- 查看更多结束 -->
     </div>
@@ -338,7 +336,7 @@
             <div class="row" style="background:rgb(200, 201, 201);color:black;height: 30px">
               <div class="col-md-4 pull-left" style="line-height:30px;">工程信息</div>
               <div class="col-md-2 pull-right" style="line-height:30px;">
-                <a href="../project_inforomation.html">更多>></a>
+                <a href="./project_inforomation.html">更多>></a>
                 
               </div>
             </div>
@@ -426,7 +424,7 @@
               height="25px"
               class="col-md-offset-3"
             />
-            <a href="../postmessage.html">发布信息</a>
+            <a href="./postmessage.html">发布信息</a>
           </div>
             <!-- <div class="col-md-3">
              <p></p>
@@ -476,7 +474,10 @@
           >
             <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
               <div class="col-md-4 pull-left">中央采购</div>
-              <div class="col-md-2 pull-right">更多>></div>
+              <div class="col-md-2 pull-right">
+                <a href="./purchase.html" style="cursor: pointer"> 更多>></a>
+               
+              </div>
             </div>
             <div style="padding-top:10px">
               <ul id="local-procurement-center-list">
@@ -490,7 +491,9 @@
           >
             <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
               <div class="col-md-4 pull-left">地方采购</div>
-              <div class="col-md-2 pull-right">更多>></div>
+              <div class="col-md-2 pull-right">
+                  <a href="./purchase.html" style="cursor: pointer"> 更多>></a>
+              </div>
             </div>
             <div style="padding-top:10px">
               <ul id="local-procurement-list"></ul>
@@ -556,7 +559,9 @@
         <div class="zb_notic col-md-6" style="margin-right: 5px">
           <div class="row hui_bg" style="background:rgb(200, 201, 201);color:black">
             <div class="col-md-3 pull-left">会议信息</div>
-            <div class="col-md-2 pull-right">更多>></div>
+            <div class="col-md-2 pull-right">
+              <a href="./meeting.html" style="cursor: pointer">更多>></a>
+            </div>
           </div style="padding-top: 10px">
           <div style="padding-top: 10px"> 
             <ul id="meeting-nformation-list">
@@ -678,13 +683,13 @@
       <div class="container">
         <div class="row">
             <div class="col-md-12 footer-bottom">
-                <a href="../aboutme.html">关于我们</a> <span>-</span>
+                <a href="./aboutme.html?type=1">关于我们</a> <span>-</span>
                 <a href="">加入我们</a> <span>-</span>
                 <a href="">联系我们</a> <span>-</span>
-                <a href="">会员服务</a> <span>-</span>
+                <a href="./aboutme.html?type=4">会员服务</a> <span>-</span>
                 <a href="">业务合作</a> <span>-</span>
-                <a href="../onlinecontact.html">在线联系</a> <span>-</span>
-                <a href="../frendlylink.html">友情链接</a>
+                <a href="./onlinecontact.html">在线联系</a> <span>-</span>
+                <a href="./frendlylink.html">友情链接</a>
             </div>
         </div>
         <div class="row">
@@ -729,7 +734,7 @@
     <!-- 登陆注册弹窗 -->
     <div id="loginalert" style="display: none;width: 516px;height: 600px;border: 1px solid red;position: fixed;top: 8%;left: 32%;z-index: 200;background: white;" >
         <p onclick="closeclose()" class="closelogin" >
-          <img src="../images/close.png" alt="" style="margin-left: 94%;width: 30px">
+          <img src="./images/close.png" alt="" style="margin-left: 94%;width: 30px">
           
         </p>
       <div class="login-html">
@@ -757,7 +762,7 @@
                 margin-left: 15px;
                 background: #1161ee;
                 color: white;position: absolute;top: 6px;" onclick="changepic()" class="pic">
-                <img src="http://192.168.0.104:8081/captcha/captchaImage?type=char" alt="" width="100%" height="100%">
+                <img src="http://192.168.0.120:8081/captcha/captchaImage?type=char" alt="" width="100%" height="100%">
               </a>
               </div>
 
@@ -788,7 +793,7 @@
             <div class="group" style="position: relative">
               <label for="pass" class="label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
               <input id="psw" type="password" class="input" length="16"   placeholder="可使用字母、数字和符号的组合" onkeyup="showpassword()" name="password"/>
-              <span style="position:absolute;right:26px;top:10px" onclick="showpsd()"><img src="../images/eye.png" alt=""></span>
+              <span style="position:absolute;right:26px;top:10px" onclick="showpsd()"><img src="./images/eye.png" alt=""></span>
               
               <table border="0px" cellpadding="0px" cellspacing="1px" style="width: 64%;margin-left: 103px;">
                 <tr height="20px" >
@@ -888,10 +893,9 @@
     </div>
    
   </body>
-  <script src="../js/signin.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="./js/signin.js"></script>
   <!-- <script src="../js/jquery-1.8.3.min.js"></script> -->
-
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- <script src="../js/jquery-1.8.3.min.js"></script> -->
   <script type="text/javascript" src="js/jquery.liMarquee.js"></script>

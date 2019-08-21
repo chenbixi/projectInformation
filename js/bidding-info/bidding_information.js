@@ -79,7 +79,7 @@ function render(element, data, total, index) {
             data[i].id +
             ">" +
             "<td><input type='checkbox' name='checkItem'></td>" +
-            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../bidding_information_detail.html?id="+data[i].id +" '> " +
+            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='bidding_information_detail.html?id="+data[i].id +" '> " +
             data[i].title +
             "</a></td>" +
             "<td style=''>" +
@@ -122,35 +122,6 @@ $.getJSON(baseurl + "/index/region", function (data) {
     }
 });
 
-/**
- * todo
- */
-/*function search_bidding() {
-    region = $("#database-region-list").val();
-    name = $("#search_kuang").val();
-    getdata(
-        {
-            region: region,
-            name: name,
-            pageNum: pageNum,
-            pageSize: pageSize
-        },
-        function (res) {
-            render("", res.data, res.totalCount, 0);
-        }
-    );
-}*/
-
-/*
-$.post(baseurl + "/system/tenderingInfoType/list", {}, function (res) {
-    var result = ' <option value="">招标类别查询</option>';
-    for (var i = 0, len = res.rows.length; i < len; i++) {
-        result += ' <option value="' + res.rows[i].name + '">' + res.rows[i].name + '</option>';
-    }
-    $("#bidding-info-list").html(result);
-
-});
-*/
 
 
 /**

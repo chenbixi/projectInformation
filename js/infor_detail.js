@@ -48,7 +48,7 @@ window.onload = function() {
 var collectiontype = "";
 function getData(id) {
   $.getJSON(baseurl + "/system/projectInfo/" + id, function(data) {
-    console.log(data);
+
     $("#projctinfo-content").empty();
     if (data.code == -100) {
       alert("您还未登录");
@@ -256,3 +256,14 @@ function collectproject(infoType, location, title, infoId) {
     }
   );
 }
+
+// 热门信息列表
+$.post(baseurl + "/system/infoCount/index/list/projectinfo ",{'pageNum':1,'pageSize':3}, function (data) {
+  var html = "";
+  console.log(data)
+  var hotnews = data.rows;
+  for(let i = 0;i<hotnews.length;i++){
+      html += `<li style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: auto 5px;"><a href='infor_detail.html?id=${hotnews[i].infoId}' style="cursor: pointer">${hotnews[i].title}</a></li>`;
+  }
+  $('#hotnews').append(html);
+});

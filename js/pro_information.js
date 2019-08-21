@@ -211,7 +211,7 @@ function render(element, data, total, index) {
             data[i].id +
             ">" +
             "<td><input type='checkbox' name='checkItem'></td>" +
-            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../infor_detail.html?id=" + data[i].id + " '> " +
+            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='infor_detail.html?id=" + data[i].id + " '> " +
             data[i].title +
             "</a></td>" +
             "<td style=''>" +
@@ -328,7 +328,7 @@ function mycollection() {
 function renderCollect(element, data, total, index) {
 
     // todo 原来是31
-    Pagination.Page($(".ht-page"), index, total, 2);
+    Pagination.Page($(".ht-page"), index, total, 31);
     var htmlStr = ' <thead><tr class=\"success\"><th></th><th>标题</th><th>地区</th><th>收藏时间</th></tr></thead><tbody id=\"projectinforlist\">';
     $("#collection-list").html(htmlStr);
     var html = '';
@@ -339,7 +339,7 @@ function renderCollect(element, data, total, index) {
             data[i].id +
             ">" +
             "<td><input type='checkbox' name='checkItem'></td>" +
-            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='../infor_detail.html?id=" + data[i].infoId + " '> " +
+            "<td  ><a  style='display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 377px;' target='_blank' href='infor_detail.html?id=" + data[i].infoId + " '> " +
             data[i].title +
             "</a></td>" +
             "<td style=''>" +
@@ -355,3 +355,14 @@ function renderCollect(element, data, total, index) {
     $("#projectinforlist").append(' </tbody>');
 
 }
+
+// 热门信息列表
+$.post(baseurl + "/system/infoCount/index/list/projectinfo ",{'pageNum':1,'pageSize':3}, function (data) {
+    var html = "";
+    console.log(data)
+    var hotnews = data.rows;
+    for(let i = 0;i<hotnews.length;i++){
+        html += `<li style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: auto 5px;"><a href='infor_detail.html?id=${hotnews[i].infoId}' style="cursor: pointer">${hotnews[i].title}</a></li>`;
+    }
+    $('#hotnews').append(html);
+});

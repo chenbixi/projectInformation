@@ -8,19 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/tf.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" href="./css/project_infor.css"/>
-    <link rel="stylesheet" href="./css/pagination.css"/>
-<<<<<<< HEAD
-   
+    <link rel="stylesheet" href="css/project_infor.css"/>
+    <link rel="stylesheet" href="css/pagination.css"/>
+    <link rel="stylesheet" href="css/public_login.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/ip.js"></script>
-   
-=======
-    <link rel="stylesheet" href="../css/public_login.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/ip.js"></script>
-    <script src="../js/public_login.js"></script>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
+    <script src="js/public_login.js"></script>
 </head>
 
 <body onload="getUserInfo()">
@@ -42,7 +35,7 @@
                     <a href="">我的收藏</a>&nbsp;&nbsp;
                     <a href="">客户服务</a>&nbsp;&nbsp;
                     <a href="">网站导航</a>&nbsp;&nbsp;
-                    <a href="">发布信息</a>&nbsp;&nbsp;
+                    <a href="./postmessage.html">发布信息</a>&nbsp;&nbsp;
                 </div>
             </div>
         </div>
@@ -121,32 +114,13 @@
                     </li>
                     <li class="">
                         <a
-<<<<<<< HEAD
-                              
-=======
                                 href="bidding_information.html"
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
                                 class="active-daohang"
                         >招标信息</span
                                 ></a>
 
                     </li>
                     <li>
-<<<<<<< HEAD
-                       
-                    </li>
-                    <li>
-                        
-                    </li>
-                    <li>
-                        
-                    </li>
-                    <li>
-                       
-                    </li>
-                    <li>
-                      
-=======
                         <a href="win_bidding.html">中标信息</a>
                     </li>
                     <li>
@@ -160,23 +134,18 @@
                     </li>
                     <li>
                         <a href="meeting.html">会议信息</a>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
                     </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
-        </div>
+        </div>      
     </div>
 </nav>
 <!-- 顶部结束 -->
 <!-- 当前位置 -->
 <div style="width: 77.5%;margin:5px auto">
-<<<<<<< HEAD
-   
-=======
-    当前位置：<a href="../index.html">首页</a>&nbsp;/&nbsp;
-    <a href="../bidding_information.html">招标信息</a>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
+    当前位置：<a href="index.html">首页</a>&nbsp;/&nbsp;
+    <a href="">招标信息</a>
 </div>
 <!-- 当前位置结束 -->
 <!-- 中间内容 -->
@@ -497,8 +466,8 @@
                 <a href="">关于我们</a> <span>-</span> <a href="">加入我们</a>
                 <span>-</span> <a href="">联系我们</a> <span>-</span>
                 <a href="">会员服务</a> <span>-</span> <a href="">业务合作</a>
-                <span>-</span> <a href="">在线联系</a> <span>-</span>
-                <a href="">友情链接</a>
+                <span>-</span> <a href="./onlinecontact.html">在线联系</a> <span>-</span>
+                <a href="./frendlylink.html">友情链接</a>
             </div>
         </div>
         <div class="row">
@@ -637,6 +606,7 @@
             /*“全选/反选”复选框*/
             var $checkAll = $thr.find("input");
             $checkAll.click(function (event) {
+               console.log($tbr.find("input"));
                 /*将所有行的选中状态设成全选框的选中状态*/
                 $tbr.find("input").prop("checked", $(this).prop("checked"));
                 /*并调整所有选中行的CSS样式*/
@@ -693,6 +663,7 @@
 
         initTableCheckbox();
     });
+   
 
     Pagination.Page($(".ht-page"), 3, 10000, 10);
 </script>

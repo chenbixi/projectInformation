@@ -6,7 +6,7 @@ $(function(){
 // 登陆后的界面
 function getUserInfo() {
     $.getJSON(baseurl + "/page/user/user/info/permission", function (data) {
-        console.log("获取用户信息", data);
+
         if (data.code == 500) {
             $("#userlogin").html(
                 "  <div> " +

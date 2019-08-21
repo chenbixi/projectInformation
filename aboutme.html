@@ -10,9 +10,20 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="./css/project_infor.css" />
     <link rel="stylesheet" href="./css/pagination.css" />
+    <link rel="stylesheet" href="./css/public_login.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="./js/public_login.js"></script>
+    <style>
+      form input{
+        margin: 15px 5px;
+      }
+      form{
+        font-size: 15px;
+      }
+    </style>
   </head>
 
-  <body>
+  <body onload="getUserInfo()">
     <!-- 顶部 -->
     <nav class="navbar navbar-inverse site-navbar">
       <!-- 顶部第一栏 -->
@@ -110,32 +121,13 @@
                         </li>
                         <li class="">
                           <a
-<<<<<<< HEAD
-                           
-=======
                             href="../bidding_information.html"
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
                             
                             >招标信息</span
                           ></a>
                           
                         </li>
                         <li>
-<<<<<<< HEAD
-                          
-                        </li>
-                        <li>
-                         
-                        </li>
-                        <li>
-                         
-                        </li>
-                        <li>
-                        
-                        </li>
-                        <li>
-                         
-=======
                           <a href="../win_bidding.html">中标信息</a>
                         </li>
                         <li>
@@ -149,7 +141,6 @@
                         </li>
                         <li>
                           <a href="../meeting.html">会议信息</a>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
                         </li>
                       </ul>
               </div>
@@ -160,11 +151,7 @@
     <!-- 顶部结束 -->
     <!-- 当前位置 -->
     <div style="width: 77.5%;margin:5px auto">
-<<<<<<< HEAD
-     
-=======
       当前位置：<a href="../index.html">首页</a>/<a href="../bidding_information.html">会议信息</a>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
     </div>
     <!-- 当前位置结束 -->
     <!-- 中间内容 -->
@@ -180,7 +167,7 @@
         >
           <!-- 用户登陆 -->
           <div class="land_plan col-md-12 col-xs-12" style="padding: 0">
-            <div>
+            <div id="userlogin">
               <div class="" style="background: #0066cc">
                 <div
                   class="word2"
@@ -241,17 +228,17 @@
           <!-- 用户登陆结束 -->
           <!-- 工程阶段 -->
           <div class="pro_stage col-md-12" style="padding: 0">
-                <div class="title">
+                <div class="title" style="cursor: pointer" onclick="handlerContent('1')"> 
                         关于我们
                 </div>               
           </div>
           <div class="pro_stage col-md-12" style="padding: 0">
-                <div class="title">
+                <div class="title" style="cursor: pointer" onclick="handlerContent('2')">
                         加入我们
                 </div>               
           </div>
           <div class="pro_stage col-md-12" style="padding: 0">
-                <div class="title">
+                <div class="title" style="cursor: pointer">
                         联系我们
                 </div>               
           </div>
@@ -268,7 +255,7 @@
           <!-- 我的收藏 -->
           <div class="pro_stage col-md-12" style="padding: 0">
             <div
-              
+            style="cursor: pointer"
               class="title"
             >
             会员服务 
@@ -278,7 +265,7 @@
           <!-- 我的浏览历史 -->
           <div class="pro_stage col-md-12" style="padding: 0">
                 <div
-                  
+                style="cursor: pointer"
                   class="title"
                 >
                 业务合作
@@ -286,15 +273,16 @@
               </div>
               <div class="pro_stage col-md-12" style="padding: 0">
                     <div
-                      
-                      class="title"
+                    style="cursor: pointer"
+                    class="title"
+                    onclick="onlinechat('6')"
                     >
                     在线联系
                     </div>
                   </div>
                   <div class="pro_stage col-md-12" style="padding: 0">
                         <div
-                          
+                        style="cursor: pointer"
                           class="title"
                         >
                         友情链接
@@ -302,7 +290,7 @@
                       </div>
                       <div class="pro_stage col-md-12" style="padding: 0">
                             <div
-                              
+                            style="cursor: pointer"
                               class="title"
                             >
                             在线联系
@@ -310,7 +298,7 @@
                           </div>
                           <div class="pro_stage col-md-12" style="padding: 0">
                                 <div
-                                  
+                                style="cursor: pointer"
                                   class="title"
                                 >
                                 联系我们
@@ -353,8 +341,12 @@
         <!-- 右侧部分 -->
         <div
           class="col-md-10"
-          style="border: 1px solid grey;padding: 0;margin-left: 10px;"
+          style="border: 1px solid blue;padding: 0;margin-left: 10px;"
         >
+        <div id="member_title" style="width:100%;height:30px;background:#0066cc;color: white;line-height: 30px;font-size: 15px;" class="text-center">
+         
+        </div>
+        <div id="content" style="padding: 20px 100px;text-align: center"></div>
           <!-- 右侧顶部 -->
           <!-- <div
             class="right_top row"
@@ -584,7 +576,6 @@
     </div>-->
   </body>
   <script type="text/javascript" src="./js/pagination.js"></script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
   <script
@@ -596,11 +587,6 @@
   <script type="text/javascript" src="js/banner.js"></script>
   <!--向上滚动-->
   <script src="js/jquery.SuperSlide.2.1.1.js"></script>
-<<<<<<< HEAD
- 
-=======
-  <script src="../js/index.js"></script>
->>>>>>> b7df7c1787d6859034334c81d4842418356ac10a
   <script type="text/javascript">
     jQuery(".txtMarquee-top").slide({
       mainCell: ".bd ul",
@@ -737,4 +723,6 @@
 
     Pagination.Page($(".ht-page"), 3, 10000, 10);
   </script>
+    <script src="js/ip.js"></script>
+  <script src="js/aboutme.js"></script>
 </html>

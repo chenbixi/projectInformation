@@ -15,7 +15,6 @@ $(function () {
             pageSize: pageSize,
         },
         function (res) {
-            console.log("获取到的数据", res);
             render("", res.data, res.totalCount, 0);
         }
     );
@@ -54,7 +53,6 @@ function getdata(opt, callback) {
         data: opt,
         dataType: "json",
         success: function (res) {
-            console.log("获取到的数据: ", res);
             callback && callback(res);
         }
     });
@@ -78,7 +76,7 @@ function render(element, data, total, index) {
             data[i].id +
             ">" +
             "<td><input type='checkbox' name='checkItem'></td>" +
-            "<td style='width:40%'><a  target='_blank' href='../landmarket-detail.html?id=" +
+            "<td style='width:40%'><a  target='_blank' href='landmarket-detail.html?id=" +
             data[i].id +
             " ' style='display: inline-block;width: 90%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;'> " +
             data[i].title +
@@ -141,8 +139,7 @@ function search_database() {
 }
 
 
-$.post(baseurl + "/system/landMarketType/list", {}, function (res) {
-    console.log("接收到的数据: ", res);
+$.post(baseurl + "/system/landMarketType/list", {'pageNum':pageNum,'pageSize':pageSize}, function (res) {
     var result = ' <option value="">类别查询</option>';
     for (var i = 0, len = res.rows.length; i < len; i++) {
         result += ' <option value="' + res.rows[i].name + '">' + res.rows[i].name + '</option>';

@@ -47,7 +47,7 @@ window.onload = function() {
 var collectiontype = "";
 function getData(id) {
   $.getJSON(baseurl + "/system/purchaseInfo/" + id, function(data) {
-    console.log(data);
+  
     $("#purchase_content").empty();
     if (data.code == -100) {
       alert("您还未登录");

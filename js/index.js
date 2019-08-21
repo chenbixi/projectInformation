@@ -1,4 +1,44 @@
+/**
+ * 顶部消息的接口
+ */
+$.post(baseurl+"/system/indexScroll/list",{'pageNum':1,'pageSize':20},function(data){
+    for(var i=0,length = data.rows.length;i<length;i++){
+        $("#information_list1").append(`
+    <li style="margin: 5px 0"><a href="#" style="text-decoration:underline;">${data.rows[i].title}<span>${data.rows[i].date}</span> </a></li>
+        
+        `);
+    }
+   
 
+
+// 顶部信息滚动
+var box=document.getElementById("information_box");
+var l1=document.getElementById("information_list1");
+var l2=document.getElementById("information_list2");
+ l2.innerHTML=l1.innerHTML;  //克隆list1的数据，使得list2和list1的数据一样
+function scrollup(){
+    if(box.scrollTop>=l1.offsetHeight){ //滚动条距离顶部的值恰好等于list1的高度时，达到滚动临界点，此时将让scrollTop=0,让list1回到初始位置，实现无缝滚动
+        box.scrollTop=0;
+    }else{
+        box.scrollTop++;
+    }
+}
+
+ var scrollMove=setInterval(scrollup,200);//数值越大，滚动速度越慢
+
+// //鼠标经过时，滚动停止
+box.onmouseover=function(){
+    clearInterval(scrollMove)
+}
+
+// //鼠标离开时，滚动继续
+box.onmouseout=function(){
+    scrollMove=setInterval(scrollup,200);
+}
+// 顶部信息滚动结束
+
+
+});
 
 // 登陆后的界面
 function getUserInfo() {
@@ -65,16 +105,16 @@ function getUserInfo() {
 
 "               <table>"+
 "               <tr>"+
-"               <td class='table-title'  >每天浏览数量</td>"+
-"               <td>1</td>"+
+"               <td class='table-title'  >可查看信息种类</td>"+
+"               <td>"+data.data.infoTypes+"</td>"+
 "               </tr>"+
 "               <tr>"+
-"               <td class='table-title'>每天浏览数量</td>"+
-"               <td>1</td>"+
+"               <td class='table-title'>可查看省份</td>"+
+"               <td>"+data.data.regons+"</td>"+
 "               </tr>"+
 "               <tr>"+
-"               <td class='table-title'>每天浏览数量</td>"+
-"               <td>1</td>"+
+"               <td class='table-title'>下载数量</td>"+
+"               <td>"+data.data.projectInfoDownloadCount+"</td>"+
 "               </tr>"+
 "               </table>"+
 "               <button  class='more-a' onmouseenter='lookmore()' onmouseout='closemore()'>查看更多</button>"+
@@ -82,6 +122,54 @@ function getUserInfo() {
 "               </div>"+
 "               </div>"+
 "               </div>"
+            )
+
+
+            // see more
+
+            $("#lookmorelist").html(
+`
+<div class="text-center" style="margin-top:10px;font-size:18px;">权限中心</div>
+  <table style="margin: 10px auto">
+    <tbody>
+      <tr>
+        <td style="width: 120px">每天可浏览数量</td>
+        <td>${data.data.permissions.watchNumberDay}</td>
+      </tr>
+      <tr>
+          <td>可浏览剩余数量</td>
+          <td>${data.data.permissions.watchNumber}</td>
+        </tr>
+        <tr>
+            <td>每天批量下载数量</td>
+            <td>${data.data.permissions.batchDownloadDay}</td>
+          </tr>
+          <tr>
+              <td>每天浏览数据库数</td>
+              <td>${data.data.permissions.dbDownloadDay}</td>
+            </tr>
+            <tr>
+                <td>同时登陆人数</td>
+                <td>${data.data.permissions.sameTimeLoginNumber}</td>
+              </tr>
+              <tr>
+                  <td>可查看的省</td>
+                  <td> ${data.data.regons}</td>
+                </tr>  
+                <tr>
+                    <td>可查看的信息</td>
+                    <td>${data.data.infoTypes}</td>
+                  </tr>
+                  <tr>
+                      <td>是否能发布信息</td>
+                      <td>${data.data.permissions.publishInfo}</td>
+                    </tr>
+    </tbody>
+  </table>
+
+
+`
+
             )
         }
     });
@@ -114,31 +202,7 @@ $.getJSON(baseurl+"/index/rotry/planting/map/list",function(data){
      */
 })
 
-// 顶部信息滚动
-var box=document.getElementById("information_box");
-var l1=document.getElementById("information_list1");
-var l2=document.getElementById("information_list2");
- l2.innerHTML=l1.innerHTML;  //克隆list1的数据，使得list2和list1的数据一样
-function scrollup(){
-    if(box.scrollTop>=l1.offsetHeight){ //滚动条距离顶部的值恰好等于list1的高度时，达到滚动临界点，此时将让scrollTop=0,让list1回到初始位置，实现无缝滚动
-        box.scrollTop=0;
-    }else{
-        box.scrollTop++;
-    }
-}
 
- var scrollMove=setInterval(scrollup,200);//数值越大，滚动速度越慢
-
-// //鼠标经过时，滚动停止
-box.onmouseover=function(){
-    clearInterval(scrollMove)
-}
-
-// //鼠标离开时，滚动继续
-box.onmouseout=function(){
-    scrollMove=setInterval(scrollup,200);
-}
-// 顶部信息滚动结束
 
 ///轮播
 $(function() {
@@ -367,7 +431,7 @@ $.post(baseurl+"/index/projectinfo/show",{"pageNum":1,"pageSize":10},function(da
         //href='../infor_detail.html?id="+ data.data[i].id+" '
         for (let i = 0,l= list.length; i < l; i++) {
             html+= `<li>
-                        <a href='../infor_detail.html?id=${list[i].id}' id='name'>${list[i].name}</a>
+                        <a href='infor_detail.html?id=${list[i].id}' id='name'>${list[i].name}</a>
                         <span class="pull-right" id="date">${list[i].date}</span>
                     </li>`
         }
@@ -439,7 +503,7 @@ $.getJSON(baseurl+"/index/tendering/wining/all?pageNum="+1+"&pageSize="+10,funct
     for(var i=0;i<data.rows.length;i++){
         $("#tendering-win-list").append(
             " <li >" +
-            "     <a href='bidding_information_detail.html?id="+data.rows[i].id+"'>"+data.rows[i].name+"</a>" +
+            "     <a href='html/win-bidding/bidding_information_detail.html?id="+data.rows[i].id+"'>"+data.rows[i].name+"</a>" +
             "     <span class='pull-right' >"+data.rows[i].date+"</span> " +
             " </li>"
         );
@@ -567,19 +631,19 @@ $.getJSON(baseurl+"/index/firend/ship/map/links/list",function(data){
 /**
  * 供地计划
  */
-$.getJSON(baseurl+"/index/land/plan/list?pageNum="+1+"&pageSize="+10,function(data){
-    for(var i=0;i<data.data.length;i++) {
-        console.log(data)
-        $("#land-plan-list").append(
-           "<li style='list-style:none'>" +
-            "    <a href='' target='_blank'  style='display:inline-block;width:100%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap'  >" +
-                    data.data[i].name +
-            "    <span>"+data.data[i].date+"</span>\n" +
-            "</a>\n" +
-            "</li>"
-        );
-    }
-})
+// $.getJSON(baseurl+"/index/land/plan/list?pageNum="+1+"&pageSize="+10,function(data){
+//     console.log(data)
+//     for(var i=0;i<data.data.length;i++) {
+//         $("#land-plan-list").append(
+//            "<li style='list-style:none'>" +
+//             "    <a href='' target='_blank'  style='display:inline-block;width:100%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap'  >" +
+//                     data.data[i].name +
+//             "    <span>"+data.data[i].date+"</span>\n" +
+//             "</a>\n" +
+//             "</li>"
+//         );
+//     }
+// })
 /**
  * 土地交易 - 出让公告
  */
@@ -627,16 +691,27 @@ $.getJSON(baseurl+"/index/land/trading/list?type=3&pageNum="+1+"&pageSize="+10,f
 /**
  * 会议信息
  */
-$.getJSON(baseurl+"/index/metting/info/list?pageNum="+1+"&pageSize="+10,function(data){
-    for(var i=0;i<data.data.length;i++) {
+// $.getJSON(baseurl+"/system/conferenceInformation/list?pageNum="+1+"&pageSize="+10,function(data){
+//     for(var i=0;i<data.data.length;i++) {
+//         $("#meeting-nformation-list").append(
+//            "<li>\n" +
+//             "                <a href=\"\">"+data.data[i].name+"</a>\n" +
+//             "                <span class=\"pull-right\">"+data.data[i].date+"</span>\n" +
+//             "              </li>"
+//         );
+//     }
+// })
+$.post(baseurl+"/system/conferenceInformation/list",{'pageNum':1,'pageSize':6},function(data){
+    console.log("会议信息收到的数据： ",data)
+        for(var i=0;i<data.data.length;i++) {
         $("#meeting-nformation-list").append(
            "<li>\n" +
-            "                <a href=\"\">"+data.data[i].name+"</a>\n" +
-            "                <span class=\"pull-right\">"+data.data[i].date+"</span>\n" +
+            "                <a href='metting-detail.html?id="+data.data[i].id+"'>"+data.data[i].title+"</a>\n" +
+            "                <span class=\"pull-right\">"+data.data[i].createDate+"</span>\n" +
             "              </li>"
         );
     }
-})
+});
 
 
 // 友情链接轮播

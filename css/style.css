@@ -1,408 +1,425 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	background:#fff;
-	margin:0;
-	padding:0;
-	color:#686868;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  color: #686868;
 }
 /* 轮播图 */
 #wrapper {
-    width:77.5% !important;
-	background:#fff;
-    position:relative;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
+  width: 77.5% !important;
+  background: #fff;
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
 }
-#wrapper .land_plan{
-
+#wrapper .land_plan {
 }
 /* 工程信息 */
 .project {
-   
-    width: 77.5%;
-    margin: 20px auto;
-
-   
-   
+  width: 77.5%;
+  margin: 20px auto;
 }
 
-.project ul li{
-    list-style: none;
-    margin:5px;
-    color:grey;
+.project ul li {
+  list-style: none;
+  margin: 5px;
+  color: grey;
 }
 
-.projectinforlist .list-title{
-
+.projectinforlist .list-title {
 }
 
-#search_kind a{
-display: inline-block;
-margin: 5px;
+#search_kind a {
+  display: inline-block;
+  margin: 5px;
 }
-.project ul li a{
-    /* -webkit-line-clamp: 1; 
+.project ul li a {
+  /* -webkit-line-clamp: 1; 
     -webkit-box-orient: vertical; 
     overflow: hidden; 
     text-overflow: ellipsis;  */
-    /* display: -webkit-box;  */
-    white-space:nowrap;
-    overflow:hidden;
-    width:70%;
-    display:inline-block;
-    text-overflow:ellipsis;
+  /* display: -webkit-box;  */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
+  display: inline-block;
+  text-overflow: ellipsis;
 }
-.invest ul li a{
-    white-space:nowrap;
-    overflow:hidden;
-    width:70%;
-    display:inline-block;
-    text-overflow:ellipsis;
+.invest ul li a {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
+  display: inline-block;
+  text-overflow: ellipsis;
 }
-#tendering-win-list li a{
-    white-space:nowrap;
-    overflow:hidden;
-    width:70%;
-    display:inline-block;
-    text-overflow:ellipsis;
+#tendering-win-list li a {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
+  display: inline-block;
+  text-overflow: ellipsis;
 }
-#kinds a{
-    display: inline-block;
+#kinds a {
+  display: inline-block;
 }
-#search_kind a{
-    display: inline-block;
+#search_kind a {
+  display: inline-block;
 }
-.project .information{
-    border: 1px solid black;
+.project .information {
+  border: 1px solid black;
 }
-.project .example{
-  
+.project .example {
 }
-.project .contact{
-    border: 1px solid black;
+.project .contact {
+  border: 1px solid black;
 }
-.project .three{
-    display: flex;
-    justify-content:space-between;
+.project .three {
+  display: flex;
+  justify-content: space-between;
 }
-.project .blue{
-    background:linear-gradient(rgba(41,125,213,1),rgba(24,84,173,1),rgba(16,46,137,1));
-    color:white;
-    height: 35px;
-    line-height: 35px;
-    font-size: 15px;
-    padding-left: 10px;
+.project .blue {
+  background: linear-gradient(
+    rgba(41, 125, 213, 1),
+    rgba(24, 84, 173, 1),
+    rgba(16, 46, 137, 1)
+  );
+  color: white;
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+  padding-left: 10px;
 }
 /* 广告位轮播 */
-.poster{
-    width: 77.5%;
-    margin: 20px auto;
-    border: 1px solid black;
-    height: 100px;
+.poster {
+  width: 77.5%;
+  margin: 20px auto;
+  border: 1px solid black;
+  height: 100px;
 }
 /* 招标信息 */
-.invest{
-    width: 77.5%;
-    margin: 20px auto;
+.invest {
+  width: 77.5%;
+  margin: 20px auto;
 }
-.invest .title{
-    width: 100%;
-    background:linear-gradient(rgba(41,125,213,1),rgba(24,84,173,1),rgba(16,46,137,1));
-   color: white;
-   height: 35px;
-   line-height: 35px;
-   font-size: 15px;
-   padding-left: 10px;
+.invest .title {
+  width: 100%;
+  background: linear-gradient(
+    rgba(41, 125, 213, 1),
+    rgba(24, 84, 173, 1),
+    rgba(16, 46, 137, 1)
+  );
+  color: white;
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+  padding-left: 10px;
 }
-.invest .hot_search{
-    width: 100%;
-    border: 1px solid black;
-    height: 80px;
-    margin: 10px 0;
-    padding: 15px 0; 
-    
+.invest .hot_search {
+  width: 100%;
+  border: 1px solid black;
+  height: 80px;
+  margin: 10px 0;
+  padding: 15px 0;
+}
+.invest .hot_search .icon {
+  border-left: 1px solid grey;
+}
+.invest .three_information {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.invest .three_information .zb_notic {
+  border: 1px solid black;
+}
 
-}
-.invest .hot_search .icon{
-    border-left: 1px solid grey ;
-}
-.invest .three_information{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-.invest .three_information .zb_notic{
-    border: 1px solid black;
-
-}
-
-.three_information ul li{
-    list-style: none;
+.three_information ul li {
+  list-style: none;
 }
 /* 登陆 */
-.use_log{
-    width: 85%;
-    margin: 10px auto;
+.use_log {
+  width: 85%;
+  margin: 10px auto;
 }
-.use_log .input-group input{
-    height: 30px;
+.use_log .input-group input {
+  height: 30px;
 }
-.use_log span{
-    
-    height: 25px;
-
+.use_log span {
+  height: 25px;
 }
-.use_check{
-    width: 80%;
-    margin: 0 auto;
+.use_check {
+  width: 80%;
+  margin: 0 auto;
 }
-.anniu{
-    width: 85%;
-    margin: 5px auto;
+.anniu {
+  width: 85%;
+  margin: 5px auto;
 }
 
-.anniu button[class=log]{
-    width: 45%;
-    height: 30px;
-    background:linear-gradient(rgba(41,125,213,1),rgba(24,84,173,1),rgba(16,46,137,1));
-    color: white;
-    margin-right: 8%;
-    border-radius: 5px;
+.anniu button[class="log"] {
+  width: 45%;
+  height: 30px;
+  background: linear-gradient(
+    rgba(41, 125, 213, 1),
+    rgba(24, 84, 173, 1),
+    rgba(16, 46, 137, 1)
+  );
+  color: white;
+  margin-right: 8%;
+  border-radius: 5px;
 }
-.anniu button[class=zc]{
-    width: 45%;
-    height: 30px;
-    background:linear-gradient(rgba(41,125,213,1),rgba(24,84,173,1),rgba(16,46,137,1));
-    color: white;
-    margin-left: 20%;
-    border-radius: 5px;
-
+.anniu button[class="zc"] {
+  width: 45%;
+  height: 30px;
+  background: linear-gradient(
+    rgba(41, 125, 213, 1),
+    rgba(24, 84, 173, 1),
+    rgba(16, 46, 137, 1)
+  );
+  color: white;
+  margin-left: 20%;
+  border-radius: 5px;
 }
 
 /* 两个广告位 */
-.two_ad{
-    width: 77.5%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
+.two_ad {
+  width: 77.5%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
 }
-.ad1,.ad2{
-    border: 1px solid black;
-    height: 100px;
+.ad1,
+.ad2 {
+  border: 1px solid black;
+  height: 100px;
 }
 /* 友情链接 */
-.link{
-    width: 100%;
-    
-    margin: 0 auto;
-    padding: 0 5%;
-    display: flex;
-    justify-content: space-around; 
-    margin: 10px 0;
+.link {
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
 }
-.link_info{
-    border: 1px solid grey;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0;
-    /* display: flex;
+.link_info {
+  border: 1px solid grey;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  /* display: flex;
     justify-content: space-between; */
 }
-.link .logo{
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-   
+.link .logo {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
 }
-.related_link{
-    width: 100%;
-    
-    margin: 0 auto;
-    padding: 0 1%;
-    display: flex;
-    justify-content: space-around; 
-    margin: 10px 0;
-    border: 1px solid grey;
+.related_link {
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 1%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  border: 1px solid grey;
 }
 
 /* 轮播图 */
 #lunbobox {
-	width:100%;
-	height:100%;
-	position:relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .lunbo {
-	width:500px;
-	height:300px;
+  width: 500px;
+  height: 300px;
 }
 .lunbo img {
-	width:100%;
-	height:100%;
-	position:absolute;
-	top:0px;
-	left:0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 #lunbobox ul {
-	width:285px;
-	position:absolute;
-	bottom:5%;
-	right:4%;
-	z-index:5;
+  width: 285px;
+  position: absolute;
+  bottom: 5%;
+  right: 4%;
+  z-index: 5;
 }
 #lunbobox ul li {
-	cursor:pointer;
-	width:10px;
-	height:4px;
-	border:1px solid #cccccc;
-	float:left;
-	list-style:none;
-	background:#cccccc;
-	text-align:center;
-	margin:0px 5px 0px 0px;
+  cursor: pointer;
+  width: 10px;
+  height: 4px;
+  border: 1px solid #cccccc;
+  float: left;
+  list-style: none;
+  background: #cccccc;
+  text-align: center;
+  margin: 0px 5px 0px 0px;
 }
 #toleft {
-	display:none;
-	width:30px;
-	height:50px;
-	font-size:40px;
-	line-height:50px;
-	text-align:center;
-	color:#f4f4f4;
-	/* background:rgba(41,125,213,1); */
-	
-    /*background:url("../images/toleft.jpg")no-repeat center;
+  display: none;
+  width: 30px;
+  height: 50px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #f4f4f4;
+  /* background:rgba(41,125,213,1); */
+
+  /*background:url("../images/toleft.jpg")no-repeat center;
 	*/
-    position:absolute;
-	top:45%;
-	left:5%;
-	cursor:pointer;
-	z-index:99;
-	opacity:0.4;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  cursor: pointer;
+  z-index: 99;
+  opacity: 0.4;
 }
 #toright {
-	display:none;
-	width:30px;
-	height:50px;
-	font-size:40px;
-	line-height:50px;
-	text-align:center;
-	color:#f4f4f4;
-	/* background:rgba(41,125,213,1); */
-	
-    position:absolute;
-	top:45%;
-	right:5%;
-	cursor:pointer;
-	z-index:99;
-	opacity:0.4;
+  display: none;
+  width: 30px;
+  height: 50px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #f4f4f4;
+  /* background:rgba(41,125,213,1); */
+
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  cursor: pointer;
+  z-index: 99;
+  opacity: 0.4;
 }
 
-
-
-.hui_bg{
-    height: 30px;
+.hui_bg {
+  height: 30px;
 }
-.hui_bg>div{
-    line-height: 30px;
+.hui_bg > div {
+  line-height: 30px;
 }
 a {
-	text-decoration:none;
-	-webkit-transition:color 0.2s linear;
-    -moz-transition:color 0.2s linear;
-    -o-transition:color 0.2s linear;
-    transition:color 0.2s linear;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 
-a:focus , a:link, a:active {
-	outline:none;
+a:focus,
+a:link,
+a:active {
+  outline: none;
 }
 
 a:hover {
-	color:#444;
+  color: #444;
 }
 
-
-.fullwidthbanner-container{
-    margin: 0px 20px;
-	width:50% !important;
-	position:relative;
-	padding:0;
-	max-height:450px !important;
-	overflow:hidden;
+.fullwidthbanner-container {
+  margin: 0px 20px;
+  width: 50% !important;
+  position: relative;
+  padding: 0;
+  max-height: 450px !important;
+  overflow: hidden;
 }
 
-.fullwidthbanner-container .fullwidthabnner	{
-	width:50% !important;
-	max-height:450px !important;
-	position:relative;
+.fullwidthbanner-container .fullwidthabnner {
+  width: 50% !important;
+  max-height: 450px !important;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	  .banner, .bannercontainer			{	width:768px; height:309px;}
+  .banner,
+  .bannercontainer {
+    width: 768px;
+    height: 309px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	   .banner, .bannercontainer		{	width:480px; height:193px;	}
+  .banner,
+  .bannercontainer {
+    width: 480px;
+    height: 193px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-		.banner, .bannercontainer		{	width:320px;height:129px;	}
+  .banner,
+  .bannercontainer {
+    width: 320px;
+    height: 129px;
+  }
 }
 
 @media only screen and (max-width: 319px) {
-		.banner, .bannercontainer		{	width:240px;height:97px;	}
+  .banner,
+  .bannercontainer {
+    width: 240px;
+    height: 97px;
+  }
 }
 
 .tp-bullets.simplebullets.round .bullet:hover,
 .tp-bullets.simplebullets.round .bullet.selected,
 .tp-bullets.simplebullets.navbar .bullet:hover,
-.tp-bullets.simplebullets.navbar .bullet.selected {	
-	background:#0066cc !important; 
+.tp-bullets.simplebullets.navbar .bullet.selected {
+  background: #0066cc !important;
 }
 .tp-leftarrow:hover,
-.tp-rightarrow:hover {	
-	background-color:#e1472f !important;
- }
+.tp-rightarrow:hover {
+  background-color: #e1472f !important;
+}
 /** BULLETS **/
 .tp-bullets {
-    z-index: 1001;
-    position: absolute;
-    bottom: 0px;
+  z-index: 1001;
+  position: absolute;
+  bottom: 0px;
 }
 
 .tp-bullets.simplebullets.round .bullet {
-    cursor: pointer;
-    position: relative;
-    background: #fff;
-    width: 188px;
-    height: 6px;
-    float: left;
-    -webkit-transition: background 0.1s linear;
-    -moz-transition: color, background 0.1s linear;
-    -o-transition: color, background 0.1s linear;
-    transition: color, background 0.1s linear;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  width: 188px;
+  height: 6px;
+  float: left;
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: color, background 0.1s linear;
+  -o-transition: color, background 0.1s linear;
+  transition: color, background 0.1s linear;
 }
 
-
 .tp-leftarrow.large {
-	z-index: 100;
-	cursor: pointer;
-	position: relative;
-	background: #0066cc url(../images/slider-left-arrow.png) no-Repeat;
-	width: 42px;
-	height: 43px;
-	margin-left: 0px;
-	margin-top: -21px;
-	-webkit-transition: background 0.1s linear;
-	-moz-transition: color, background 0.1s linear;
-	-o-transition: color, background 0.1s linear;
-	transition: color, background 0.1s linear;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);/*增加阴影*/
-	/*
+  z-index: 100;
+  cursor: pointer;
+  position: relative;
+  background: #0066cc url(../images/slider-left-arrow.png) no-Repeat;
+  width: 42px;
+  height: 43px;
+  margin-left: 0px;
+  margin-top: -21px;
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: color, background 0.1s linear;
+  -o-transition: color, background 0.1s linear;
+  transition: color, background 0.1s linear;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); /*增加阴影*/
+  /*
 	**打开注释，按钮变成圆形的
 	border-radius: 20px;  所有角都使用半径为5px的圆角，此属性为CSS3标准属性 
 	-moz-border-radius: 20px;  Mozilla浏览器的私有属性 
@@ -412,20 +429,20 @@ a:hover {
 }
 
 .tp-rightarrow.large {
-    z-index: 100;
-    cursor: pointer;
-    position: relative;
-    background: #0066cc url(../images/slider-right-arrow.png) no-Repeat 0 0;
-    width: 42px;
-    height: 43px;
-    margin-left: 0;
-    margin-top: -21px;
-    -webkit-transition: background 0.1s linear;
-    -moz-transition: color, background 0.1s linear;
-    -o-transition: color, background 0.1s linear;
-    transition: color, background 0.1s linear;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);/*增加阴影*/
-	/*
+  z-index: 100;
+  cursor: pointer;
+  position: relative;
+  background: #0066cc url(../images/slider-right-arrow.png) no-Repeat 0 0;
+  width: 42px;
+  height: 43px;
+  margin-left: 0;
+  margin-top: -21px;
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: color, background 0.1s linear;
+  -o-transition: color, background 0.1s linear;
+  transition: color, background 0.1s linear;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); /*增加阴影*/
+  /*
 	**打开注释，按钮变成圆形的
 	border-radius: 20px;  所有角都使用半径为5px的圆角，此属性为CSS3标准属性 
 	-moz-border-radius: 20px;  Mozilla浏览器的私有属性 
@@ -434,150 +451,146 @@ a:hover {
 	*/
 }
 
-
-
 .tp-bullets.tp-thumbs {
-    z-index: 100;
-    position: absolute;
-    padding: 3px;
-    background-color: #fff;
-    width: 500px;
-    height: 50px;
-    margin-top: -50px;
+  z-index: 100;
+  position: absolute;
+  padding: 3px;
+  background-color: #fff;
+  width: 500px;
+  height: 50px;
+  margin-top: -50px;
 }
 
 .fullwidthbanner-container .tp-thumbs {
-    padding: 3px;
+  padding: 3px;
 }
 
 .tp-bullets.tp-thumbs .tp-mask {
-    width: 500px;
-    height: 50px;
-    overflow: hidden;
-    position: relative;
+  width: 500px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
 }
 
 .tp-bullets.tp-thumbs .tp-mask .tp-thumbcontainer {
-    width: 5000px;
-    position: absolute;
+  width: 5000px;
+  position: absolute;
 }
 
 .tp-bullets.tp-thumbs .bullet {
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-    overflow: hidden;
-    background: none;
-    margin: 0;
-    float: left;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	/*filter: alpha(opacity=50);	*/
-    -moz-opacity: 0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  background: none;
+  margin: 0;
+  float: left;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /*filter: alpha(opacity=50);	*/
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
 }
 
 .tp-bullets.tp-thumbs .bullet:hover,
 .tp-bullets.tp-thumbs .bullet.selected {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    -moz-opacity: 1;
-    -khtml-opacity: 1;
-    opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
 }
 
 .tp-thumbs img {
-    width: 100%;
+  width: 100%;
 }
 
 .tp-bannertimer {
-    width: 100%;
-    height: 10px;
-    position: absolute;
-    z-index: 200;
-    z-index: 5000;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  z-index: 200;
+  z-index: 5000;
 }
 
 .tp-bannertimer.tp-bottom {
-    bottom: 0px !important;
-    height: 5px;
+  bottom: 0px !important;
+  height: 5px;
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .responsive .tp-bullets.tp-thumbs {
-        width: 300px !important;
-        height: 30px !important;
-    }
+  .responsive .tp-bullets.tp-thumbs {
+    width: 300px !important;
+    height: 30px !important;
+  }
 
-    .responsive .tp-bullets.tp-thumbs .tp-mask {
-        width: 300px !important;
-        height: 30px !important;
-    }
+  .responsive .tp-bullets.tp-thumbs .tp-mask {
+    width: 300px !important;
+    height: 30px !important;
+  }
 
-    .responsive .tp-bullets.tp-thumbs .bullet {
-        width: 60px !important;
-        height: 30px !important;
-    }
+  .responsive .tp-bullets.tp-thumbs .bullet {
+    width: 60px !important;
+    height: 30px !important;
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-    .responsive .tp-bullets {
-        display: none;
-    }
+  .responsive .tp-bullets {
+    display: none;
+  }
 
-    .responsive .tparrows {
-        display: none;
-    }
+  .responsive .tparrows {
+    display: none;
+  }
 }
 
-
 .tp-simpleresponsive img {
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .tp-simpleresponsive a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .tp-simpleresponsive ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.tp-simpleresponsive >ul >li {
-    list-stye: none;
-    position: absolute;
-    visibility: hidden;
+.tp-simpleresponsive > ul > li {
+  list-stye: none;
+  position: absolute;
+  visibility: hidden;
 }
 
 .caption.slidelink a div,
 .tp-caption.slidelink a div {
-    width: 10000px;
-    height: 10000px;
+  width: 10000px;
+  height: 10000px;
 }
 
 .tp-loader {
-    background: url(../images/loader.gif) no-repeat 10px 10px;
-    background-color: #fff;
-    margin: -22px -22px;
-    top: 50%;
-    left: 50%;
-    z-index: 10000;
-    position: absolute;
-    width: 44px;
-    height: 44px;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+  background: url(../images/loader.gif) no-repeat 10px 10px;
+  background-color: #fff;
+  margin: -22px -22px;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
 }

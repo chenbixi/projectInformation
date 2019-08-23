@@ -3,10 +3,12 @@
  */
 $.post(baseurl+"/system/indexScroll/list",{'pageNum':1,'pageSize':20},function(data){
     for(var i=0,length = data.rows.length;i<length;i++){
-        $("#information_list1").append(`
-    <li style="margin: 5px 0"><a href="#" style="text-decoration:underline;">${data.rows[i].title}<span>${data.rows[i].date}</span> </a></li>
-        
-        `);
+        $("#information_list1").append(
+            "<li style='margin: 5px 0'>"+
+            "<a href='#' style='text-decoration:underline;'>"+data.rows[i].title+""+
+            "<span>"+data.rows[i].date+"</span>"+
+            "</a>"+"</li>"
+        );
     }
    
 
@@ -105,7 +107,7 @@ function getUserInfo() {
 
 "               <table>"+
 "               <tr>"+
-"               <td class='table-title'  >可查看信息种类</td>"+
+"               <td class='table-title' style='white-space:nowrap;overflow:hidden;'>可查看信息种类</td>"+
 "               <td>"+data.data.infoTypes+"</td>"+
 "               </tr>"+
 "               <tr>"+
@@ -128,47 +130,43 @@ function getUserInfo() {
             // see more
 
             $("#lookmorelist").html(
-`
-<div class="text-center" style="margin-top:10px;font-size:18px;">权限中心</div>
-  <table style="margin: 10px auto">
-    <tbody>
-      <tr>
-        <td style="width: 120px">每天可浏览数量</td>
-        <td>${data.data.permissions.watchNumberDay}</td>
-      </tr>
-      <tr>
-          <td>可浏览剩余数量</td>
-          <td>${data.data.permissions.watchNumber}</td>
-        </tr>
-        <tr>
-            <td>每天批量下载数量</td>
-            <td>${data.data.permissions.batchDownloadDay}</td>
-          </tr>
-          <tr>
-              <td>每天浏览数据库数</td>
-              <td>${data.data.permissions.dbDownloadDay}</td>
-            </tr>
-            <tr>
-                <td>同时登陆人数</td>
-                <td>${data.data.permissions.sameTimeLoginNumber}</td>
-              </tr>
-              <tr>
-                  <td>可查看的省</td>
-                  <td> ${data.data.regons}</td>
-                </tr>  
-                <tr>
-                    <td>可查看的信息</td>
-                    <td>${data.data.infoTypes}</td>
-                  </tr>
-                  <tr>
-                      <td>是否能发布信息</td>
-                      <td>${data.data.permissions.publishInfo}</td>
-                    </tr>
-    </tbody>
-  </table>
-
-
-`
+                "<div class='text-center' style='margin-top:10px;font-size:18px;'>权限中心</div>"+
+                    "<table style='margin: 10px auto'>"+
+                        "<tbody>"+
+                                "<tr>"+
+                                    "<td style='width: 120px'>每天可浏览数量</td>"+
+                                   " <td>"+data.data.permissions.watchNumberDay+"</td>"+
+                               " </tr>"+
+                                "<tr>"+
+                                    "<td>可浏览剩余数量</td>"+
+                                    "<td>"+data.data.permissions.watchNumber+"</td>"+
+                               " </tr>"+
+                               " <tr>"+
+                                    "<td>每天批量下载数量</td>"+
+                                   "<td>"+data.data.permissions.batchDownloadDay+"</td>"+
+                               " </tr>"+
+                                "<tr>"+
+                                    "<td>每天浏览数据库数</td>"+
+                                    "<td>"+data.data.permissions.dbDownloadDay+"</td>"+
+                                "</tr>"+
+                                "<tr>"+
+                                    "<td>同时登陆人数</td>"+
+                                   " <td>"+data.data.permissions.sameTimeLoginNumber+"</td>"+
+                              "  </tr>"+
+                               " <tr>"+
+                                   " <td>可查看的省</td>"+
+                                   " <td>"+data.data.regons+"</td>"+
+                                "</tr>"+
+                                "<tr>"+
+                                    "<td>可查看的信息</td>"+
+                                    "<td>"+data.data.infoTypes+"</td>"+
+                               " </tr>"+
+                                "<tr>"+
+                                  "<td>是否能发布信息</td>"+
+                                    "<td>"+data.data.permissions.publishInfo+"</td>"+
+                                "</tr>"+
+                       "</tbody>"+
+               "</table>"
 
             )
         }
@@ -348,7 +346,7 @@ $("#lunbobox ul li,.lunbo a img,#toright,#toleft ").hover(
  */
 $.getJSON(baseurl+"/index/about/link/list?type=1",function(data){
     for(var i=0;i<data.data.length;i++) {
-        $("#link_list").append("<option  value="+data.data[i].url+">"+data.data[i].name+"</option>");
+        $("#link_list").append("<option value="+data.data[i].url+">"+data.data[i].name+"</option>");
         /**
          * 参数
          * var 名称(下拉框的name) = data.data[i].name
@@ -430,10 +428,17 @@ $.post(baseurl+"/index/projectinfo/show",{"pageNum":1,"pageSize":10},function(da
         var list = data.rows
         //href='../infor_detail.html?id="+ data.data[i].id+" '
         for (let i = 0,l= list.length; i < l; i++) {
-            html+= `<li>
-                        <a href='infor_detail.html?id=${list[i].id}' id='name'>${list[i].name}</a>
-                        <span class="pull-right" id="date">${list[i].date}</span>
-                    </li>`
+            html+= 
+           " <li>"+
+                "<a href='infor_detail.html?id='"+list[i].id+"' id='name'>"+list[i].name+"</a>"+
+               "<span class='pull-right' id='date'>"+list[i].date+"</span>"+
+            "</li>"
+            
+            
+            // `<li>
+            //             <a href='infor_detail.html?id=${list[i].id}' id='name'>${list[i].name}</a>
+            //             <span class="pull-right" id="date">${list[i].date}</span>
+            //         </li>`
         }
         $('#project_info').html(html)
     }
